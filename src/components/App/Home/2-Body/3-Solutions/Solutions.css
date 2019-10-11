@@ -1,0 +1,20 @@
+.solutions {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  padding: 2em 1rem;
+  margin: 0;
+
+}
+
+.solutions__info {
+  display: grid;
+  grid-template: repeat(1, minmax(200px, 1fr)) / repeat(3, minmax(200px, 380px));
+  gap: 1.75rem;
+  justify-content: center;
+}
+
+@media screen and (max-width : 900px){
+  .solutions__info {
+    grid-template: repeat(1, minmax(200px, 1fr)) / 1fr;
+  }
+}

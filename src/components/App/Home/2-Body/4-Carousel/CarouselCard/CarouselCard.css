@@ -1,0 +1,62 @@
+
+/*Carousel Card component*/
+.carousel-card{
+  width: 100%;
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+  border: 1px solid black;
+  /*justify-content: center;*/
+  text-align:  center;
+}
+/*image of Carousel Card Component*/
+.carousel-card__image{
+  width: 70%;
+  height: 30vh;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin: auto;
+
+}
+/*Text of Carousel Card Component*/
+.carousel-card__text{
+  background: #24D9CF;
+  max-width: 1200px;
+  align-items: center;
+  margin-top: 1px;
+  font-size: 1.6em;
+  color: white;
+
+}
+/*Media Query for a medium deskptop screen*/
+@media screen and (max-width: 1000px){
+  .carousel-card__image{
+    width: 50%;
+    height: 22vh;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: auto;
+  
+  }
+  .carousel-card__text{
+    background: #24D9CF;
+    align-items: center;
+    margin-top: 1px;
+    font-size: 1.3em;
+    color: white;
+    
+  
+  }
+}
+/*Media Query for a small device*/
+@media screen and (max-width: 480px){
+  .carousel-card__image{
+    width: 100%;
+    height: 20vh;
+  }
+  .carousel-card__text{
+    background: #24D9CF;
+    align-items: center;
+    font-size: 1.3em;
+    color: white;
+  }
+}

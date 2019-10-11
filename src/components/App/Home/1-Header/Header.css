@@ -1,0 +1,95 @@
+/* Header block */
+.header {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  top: 0;
+}
+
+/* navbar element */
+.header__navbar {
+  display: grid;
+  grid-template: 1fr / repeat(2, minmax(100px, 600px));
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* brand element */
+.header__brand {
+  animation: showBrand 2s forwards;
+  justify-self: center;
+  align-self: center;
+}
+
+.header__brand-image {
+  width: 10.875rem;
+  height: 3.125rem;
+}
+
+/* menu element */
+.header__menu {
+  justify-self: center;
+  align-self: center;
+}
+
+/* menu list element */
+.header__menu-list {
+  list-style: none;
+  display: grid;
+  color: white;
+  grid-template: 1fr / repeat(3, minmax( auto, 200px));
+  padding: 0;
+  margin: 0;
+  justify-items: center;
+}
+.header__menu-list li a{
+  color: white;
+  text-align: center;
+  font-size:2rem;
+  font-family:  'Open Sans',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+
+/* keyframes for Brand animation */
+@keyframes showBrand {
+  from {
+    opacity: 0;
+    transform: scale(.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.header__burger {
+  display: none;
+}
+
+.header__burger span{
+  width: 35px;
+  height: 5px;
+  background: white;
+  margin: 6px 0;
+  padding: 0;
+  border-radius: 5px;
+  display: block
+}
+
+@media screen and (max-width: 1011px) {
+  .header__burger {
+    display: block;
+    justify-self: end;
+    align-self: center;
+    padding: 0 1rem;
+  }
+  .header__menu {
+    display: none;
+  }
+}

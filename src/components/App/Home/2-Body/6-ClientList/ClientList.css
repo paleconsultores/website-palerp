@@ -1,0 +1,19 @@
+/* Client List component */
+.client-list {
+  display: grid;
+  grid-template: 1fr / 1fr;
+}
+
+.client-list__title--green {
+  color: #00BB8D;
+  font-size: 95px;
+  margin:0;
+}
+
+/* Client Cards of Client list component*/
+.client-list-cards {
+  white-space: nowrap;
+  overflow: scroll;
+  width: 80%;
+  justify-self: center;
+}

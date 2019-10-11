@@ -1,0 +1,35 @@
+/* Card Service component */
+.card-service {
+  background: #FFFFFF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.50);
+  border-radius: 8px 8px 8px 8px;
+  /* box-sizing: border-box; */
+  width: 90%;
+  justify-self: center;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  padding: 0.63rem;
+}
+
+/* title of CardService component */
+.card-service .title {
+  text-align: center;
+  padding: 1.5em 0;
+  justify-self: center;
+  align-self: center;
+}
+
+/* description of CardService component */
+.card-service__description {
+  margin: 0;
+  padding: 1.5em 3rem;
+  font-size: 2rem;
+  align-self: center;
+  text-align: justify;
+}
+
+/* image of CardService component */
+.card-service__image {
+  width: 100%;
+  justify-self: center;
+}

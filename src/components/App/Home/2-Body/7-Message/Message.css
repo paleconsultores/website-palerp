@@ -1,0 +1,13 @@
+.message {
+  background: #FF4544;
+  color: white;
+}
+
+.message__paragraph {
+  padding: 1.5em 3rem; /* mezclando em y rem */
+  margin: 0;
+  font-size:3rem;
+  text-align: center;
+  font-family:'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,  'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
