@@ -3,7 +3,7 @@
   position: absolute;
   z-index: 3;
   width: 100%;
-  background:#D9242E;
+  background: rgba(217, 36, 46, .8);
   top: 0;
 }
 
@@ -13,7 +13,7 @@
   grid-template: 1fr / repeat(2, minmax(100px, 600px));
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
   justify-content: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 /* brand element */
@@ -47,7 +47,7 @@
 .header__menu-list li a{
   color: white;
   text-align: center;
-  font-size:2rem;
+  font-size: 1rem;
   font-family:  'Open Sans',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   text-decoration: none;
   font-weight: bold;
@@ -70,16 +70,58 @@
 
 .header__burger {
   display: none;
+  width: 3.5rem;
+  height: 2.5rem;
+  position: relative;
+  transition: .5s ease-in-out;
 }
 
 .header__burger span{
-  width: 35px;
-  height: 5px;
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: .3125rem;
   background: white;
-  margin: 6px 0;
   padding: 0;
   border-radius: 5px;
-  display: block
+  transition: .25s ease-in-out;
+}
+
+.header__burger span:nth-child(1) {
+  top: 0rem;
+}
+
+.header__burger span:nth-child(2) {
+  top: 1.25rem;
+}
+
+.header__burger span:nth-child(3) {
+  top: 1.25rem;
+}
+
+.header__burger span:nth-child(4) {
+  top: 2.5rem;
+}
+
+.header__burger.open span:nth-child(1) {
+  top: 8px;
+  width: 0%;
+  left: 50%;
+}
+
+.header__burger.open span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.header__burger.open span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.header__burger.open span:nth-child(4)  {
+  top: 8px;
+  width: 0%;
+  left: 50%;
 }
 
 @media screen and (max-width: 1011px) {
@@ -87,7 +129,6 @@
     display: block;
     justify-self: end;
     align-self: center;
-    padding: 0 1rem;
   }
   .header__menu {
     display: none;
