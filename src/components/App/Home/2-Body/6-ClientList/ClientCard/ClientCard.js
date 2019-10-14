@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 //Resources
-import DEFAULT_IMAGE from './images/etapoy.jpg';
+import DEFAULT_IMAGE from './images/etapoy-150x150.jpg';
 import './ClientCard.css';
 
 export function ClientCard(
