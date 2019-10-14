@@ -8,7 +8,7 @@ export function Header() {
     <header className="header">
       <nav className="header__navbar topnav">
         <a href="/" className="header__brand">
-          <img className="header__brand-image" src={logoPale}></img>  
+          <img className="header__brand-image" src={logoPale} alt="logoPale"></img>
         </a>
         <div className="header__menu ">
           <ul className="header__menu-list">
