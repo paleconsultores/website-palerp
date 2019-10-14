@@ -2,22 +2,18 @@
 /*Carousel Card component*/
 .carousel-card{
   width: 100%;
-  /* display: grid;
-  grid-template: 1fr / 1fr 1fr; */
-  /*box-sizing: border-box;*/
   display: flex;
   flex: 1;
   min-width: 1200px;
-  opacity: 0.5;
+  opacity: 0;
   transition: opacity linear;
   border: 1px solid black;
-  /*justify-content: center;*/
   text-align:  center;
 }
 /*image of Carousel Card Component*/
 .carousel-card__image{
   width: 50%;
-  height: auto;
+  height: 20em;
   padding-top: 5%;
   padding-bottom: 5%;
   margin: auto;
@@ -32,15 +28,10 @@
   color: white;
 
 }
-@media screen and (max-width: 1269px){
-  .carousel-card{
-    min-width: 1000px;
-  }
-}
 /*Media Query for a medium deskptop screen*/
 @media screen and (max-width: 1052px){
   .carousel-card{
-    min-width: 80vw;
+    min-width: 95vw;
   }
   .carousel-card__image{
     width: 50%;
@@ -57,19 +48,39 @@
     font-size: 1.3em;
     color: white;
   }
-}
-/*Media Query for a small device*/
-@media screen and (max-width: 480px){
+}  
+@media screen and (max-width: 768px){
   .carousel-card{
-    min-width: 10vw;
-    opacity: 0;
+    min-width: 95vw;
+    height: 32em;
   }
   .carousel-card__image{
     width: 50%;
-    height: 20vh;
+    height: 50%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: auto;
+  
   }
   .carousel-card__text{
-    width: 300px;
+    background: #24D9CF;
+    align-items: center;
+    margin-top: 1px;
+    font-size: 1.3em;
+    color: white;
+  }
+} 
+/*Media Query for a small device*/
+@media screen and (max-width: 480px){
+  .carousel-card{
+    min-width: 36em;
+    height: 30em;
+  }
+  .carousel-card__image{
+    width: 45%;
+    height: 60%;
+  }
+  .carousel-card__text{
     background: #24D9CF;
     align-items: center;
     font-size: 1.3em;
