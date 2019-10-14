@@ -4,6 +4,15 @@ import './Header.css'
 import logoPale from '../../../../images/Logo_Pale_Principal_Imagen.png';
 
 export function Header() {
+  function CollapseBurgerMenu() {
+    var burgerMenu = document.getElementsByClassName("header__burger");
+    if (burgerMenu[0].classList.contains("open")) {
+      burgerMenu[0].classList.remove("open");
+    } else {
+      burgerMenu[0].classList.add("open");
+    }
+  }
+
   return(
     <header className="header">
       <nav className="header__navbar topnav">
@@ -17,7 +26,8 @@ export function Header() {
             <li> <a href="/#ClientesList">CLIENTES</a></li>
           </ul>
         </div>
-        <div className="header__burger">
+        <div className="header__burger" onClick={CollapseBurgerMenu}>
+          <span></span>
           <span></span>
           <span></span>
           <span></span>
