@@ -1,0 +1,19 @@
+.moreInformation{
+    display: grid;
+    grid-template: none;
+    padding:2em 1rem;
+    margin: 0 auto;
+    
+}
+
+.moreInformation_info{
+  display: grid;
+  grid-template: repeat(1, minmax(200px, 1fr)) / repeat(1, 380px);
+  gap: 1.75rem;
+  justify-content:center;
+}
+@media screen and (max-width : 900px){
+    .moreInformation_info {
+      grid-template: repeat(1, minmax(200px, 1fr)) / 1fr;
+    }
+  }

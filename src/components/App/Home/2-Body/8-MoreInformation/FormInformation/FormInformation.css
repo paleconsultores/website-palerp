@@ -1,0 +1,44 @@
+.formInformation{
+    align-content: center;
+    padding: 0.63rem;
+}
+
+.formInformation h2{
+    font-family: 'Open Sans',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,  'Helvetica Neue', sans-serif;
+    font-size: 1.5625rem;
+    color:#69B4CA ;
+    font-weight: bold;
+}
+
+.formInformation_formlabel{
+    font-family: 'Open Sans',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,  'Helvetica Neue', sans-serif;
+    font-size:1.25rem;
+    padding: 5px;
+}
+
+.formInformation_formbutton{
+      font-family: 'Open Sans',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,  'Helvetica Neue', sans-serif;
+      font-size: 1.3rem;
+      color: #4B75B8;
+      font-weight: bold;
+      text-align: center;
+      background: transparent;
+      border:#4B75B8 1px solid;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+}
+
+.formInformation_input{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+}
+.formInformation_divbutton{
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding:20px;
+}
