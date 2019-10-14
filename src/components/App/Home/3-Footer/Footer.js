@@ -9,7 +9,7 @@ export const Footer = () => {
   return(
     <footer>
       <div className="info">
-        <img className="logoFooter" src={logoPale}></img>
+        <img className="logoFooter" src={logoPale} alt="logoPale"></img>
         <h5>Urb.Marcavalle E-15,Cusco-Cusco</h5>
         <h5>Info@palerp.com</h5>
         <h5>984-125-256</h5>
