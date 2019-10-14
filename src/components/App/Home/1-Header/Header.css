@@ -4,7 +4,6 @@
   z-index: 3;
   width: 100%;
   background: rgba(255, 255, 255, 0.2);
-  top: 0;
 }
 
 /* navbar element */
@@ -13,7 +12,6 @@
   grid-template: 1fr / repeat(2, minmax(100px, 600px));
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
   justify-content: center;
-  padding: 2rem;
 }
 
 /* brand element */
@@ -24,7 +22,7 @@
 }
 
 .header__brand-image {
-  width: 10.875rem;
+  width: 7.5rem;
   height: 3.125rem;
 }
 
@@ -44,17 +42,6 @@
   margin: 0;
   justify-items: center;
 }
-.header__menu-list li a{
-  color: white;
-  text-align: center;
-  font-size:2rem;
-  font-family:  'Open Sans',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-
-
 
 /* keyframes for Brand animation */
 @keyframes showBrand {

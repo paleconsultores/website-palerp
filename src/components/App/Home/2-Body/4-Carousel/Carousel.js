@@ -28,9 +28,6 @@ export class Carousel extends React.Component {
     changeProperty = () => {
         var newIndex = this.state.property.index + 1;
         var resetIndex = data.properties.length - 1;
-        
-        //
-        //
         if (newIndex > resetIndex) {
             newIndex=0
         }
@@ -39,7 +36,7 @@ export class Carousel extends React.Component {
         })
     }
     componentDidMount() {
-        this.startCarousel()
+         this.startCarousel()
     }
     startCarousel = () => {
         setInterval(()=>{
@@ -49,19 +46,17 @@ export class Carousel extends React.Component {
     render() {
         const { properties, property } = this.state;
         return (
-            <div>
-                {/* <button
-                    onClick={() => this.prevProperty()}
-                    disabled={property.index === 0}
-                >Prev</button>
-                <button
-                    onClick={() => this.nextProperty()}
-                    disabled={property.index === data.properties.length - 1}
-                >Next</button> */}
-                <div className="carousel-slider">
-                    <CarouselCard property={property} />
+            <section className="carousel-section" >
+                <div className={`carousel-slider active-slide-${property.index}`}>
+                    <div className="carousel-slider-wrapper" style={{
+                  'transform': `translateX(-${property.index*(100/properties.length)}%)`
+                        }}>
+                        {
+                            properties.map(property => <CarouselCard key={property._id} property={property} />)
+                        }
+                    </div>  
                 </div>
-            </div>
+            </section>
         );
     }
 }

@@ -2,16 +2,22 @@
 /*Carousel Card component*/
 .carousel-card{
   width: 100%;
-  display: grid;
-  grid-template: 1fr / 1fr 1fr;
+  /* display: grid;
+  grid-template: 1fr / 1fr 1fr; */
+  /*box-sizing: border-box;*/
+  display: flex;
+  flex: 1;
+  min-width: 1200px;
+  opacity: 0.5;
+  transition: opacity linear;
   border: 1px solid black;
   /*justify-content: center;*/
   text-align:  center;
 }
 /*image of Carousel Card Component*/
 .carousel-card__image{
-  width: 70%;
-  height: 30vh;
+  width: 50%;
+  height: auto;
   padding-top: 5%;
   padding-bottom: 5%;
   margin: auto;
@@ -20,15 +26,22 @@
 /*Text of Carousel Card Component*/
 .carousel-card__text{
   background: #24D9CF;
-  max-width: 1200px;
   align-items: center;
   margin-top: 1px;
   font-size: 1.6em;
   color: white;
 
 }
+@media screen and (max-width: 1269px){
+  .carousel-card{
+    min-width: 1000px;
+  }
+}
 /*Media Query for a medium deskptop screen*/
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1052px){
+  .carousel-card{
+    min-width: 80vw;
+  }
   .carousel-card__image{
     width: 50%;
     height: 22vh;
@@ -43,17 +56,20 @@
     margin-top: 1px;
     font-size: 1.3em;
     color: white;
-    
-  
   }
 }
 /*Media Query for a small device*/
 @media screen and (max-width: 480px){
+  .carousel-card{
+    min-width: 10vw;
+    opacity: 0;
+  }
   .carousel-card__image{
-    width: 100%;
+    width: 50%;
     height: 20vh;
   }
   .carousel-card__text{
+    width: 300px;
     background: #24D9CF;
     align-items: center;
     font-size: 1.3em;

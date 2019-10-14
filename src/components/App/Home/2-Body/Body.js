@@ -18,34 +18,18 @@ export class Body extends React.Component {
   render() {
     return(
       <div className="container">
-        <section id="Hero">
-            <Hero />
-        </section>
-        <section>
-            <Message>
-              Somos una empresa de consultoría y desarrollo de software,dedicada a brindar soluciones a empresas en distintos rubros
-            </Message>
-        </section>
-        <section id="Information">
-            <Information/>
-        </section>
-        <section id="Solutions">
-            <Solutions/>
-        </section>
-        <section>
-            <Message>
-              Conoce mas sobre nuestro trabajo
-            </Message>
-        </section>
-        <section id="Carousel">
-             <Carousel/>
-        </section>
-        <section id="Services">
-             <Services/>
-        </section>
-        <section id="ClientesList">
-            <ClientList/>
-        </section>    
+        <Hero />
+        <Message>
+          Somos una empresa de consultoría y desarrollo de software,dedicada a brindar soluciones a empresas en distintos rubros
+        </Message>
+        <Information/>
+        <Solutions/>
+        <Message>
+          Conoce mas sobre nuestro trabajo
+        </Message>
+        <Carousel />
+        <Services />
+        <ClientList />
       </div>
     );
   }

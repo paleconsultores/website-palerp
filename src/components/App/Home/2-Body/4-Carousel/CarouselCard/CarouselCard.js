@@ -8,7 +8,7 @@ export function CarouselCard ({property}) {
     const {index, picture, title,text} = property;
     return (
         <div id={`card-${index}`} className="carousel-card">
-            <img className="carousel-card__image" src={picture} />
+            <img className="carousel-card__image" src={picture} alt="imageCarousel"/>
             <div className="carousel-card__text">
                 <h1>{title}</h1>
                 <p>

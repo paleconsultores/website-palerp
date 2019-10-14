@@ -13,7 +13,7 @@ export function ClientCard(
 {
   return (
     <div className="ClientCard">
-      <img className="image" src={image}></img>
+      <img className="image" src={image} alt = "imageClient"></img>
     </div>
   );
 }
