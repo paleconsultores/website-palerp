@@ -12,8 +12,8 @@
 
 /* Client Cards of Client list component*/
 .client-list-cards {
-  white-space: nowrap;
-  overflow: scroll;
+  /* white-space: nowrap;
+  overflow: scroll; */
   width: 90%;
   justify-self: center;
 }
