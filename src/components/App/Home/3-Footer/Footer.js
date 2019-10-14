@@ -31,7 +31,7 @@ export const Footer = () => {
                 <FontAwesomeIcon icon={faWhatsappSquare} size="3x" color="white"/>
               </a>
                       
-              <a  className="social" href="https://www.facebook.com/ifacturacioncusco/">
+              <a  className="social" href="https://www.facebook.com/pale.consultores">
               <FontAwesomeIcon icon={faFacebookSquare} size="3x" color="white"/>
               </a>
             </div>
