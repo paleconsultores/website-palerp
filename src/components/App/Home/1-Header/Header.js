@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './Header.css'
-import logoPale from '../../../../images/Logo_Pale_Principal_Imagen.png';
+import logoPale from '../../../../images/Logo_Pale_Negativo_Imagen.png';
 
 export function Header() {
   function CollapseBurgerMenu() {

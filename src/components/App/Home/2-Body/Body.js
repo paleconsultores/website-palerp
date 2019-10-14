@@ -9,6 +9,7 @@ import { Carousel } from './4-Carousel';
 import { Services } from './5-Services';
 import { ClientList } from './6-ClientList';
 import { Message } from './7-Message';
+import { MoreInformation } from './8-MoreInformation';
 
   // Styles
 import './Body.css';
@@ -45,6 +46,9 @@ export class Body extends React.Component {
         </section>
         <section id="ClientesList">
             <ClientList/>
+        </section>
+        <section id="MoreInformation">
+          <MoreInformation/>
         </section>    
       </div>
     );
