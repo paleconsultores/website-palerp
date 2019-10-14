@@ -27,11 +27,11 @@ export const Footer = () => {
               <a  className="social" href="https://www.youtube.com/PaleConsultores">
                 <FontAwesomeIcon icon={faYoutubeSquare} size="3x" color="white"/>
               </a> 
-              <a  className="social" href="https://www.facebook.com/ifacturacioncusco/">
+              <a  className="social" href="https://api.whatsapp.com/send?phone=+51984125256&amp;text=Quiero%20saber%20mas%20de%20iFacturacion ">
                 <FontAwesomeIcon icon={faWhatsappSquare} size="3x" color="white"/>
               </a>
                       
-              <a  className="social" href="https://api.whatsapp.com/send?phone=+51984125256&amp;text=Quiero%20saber%20mas%20de%20iFacturacion">
+              <a  className="social" href="https://www.facebook.com/ifacturacioncusco/">
               <FontAwesomeIcon icon={faFacebookSquare} size="3x" color="white"/>
               </a>
             </div>
