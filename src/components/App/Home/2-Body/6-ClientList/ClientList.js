@@ -13,7 +13,7 @@ export function ClientList() {
       </div>
       <div className="client-list-cards">
         {
-          [1, 2, 3, 4, 5].map(item => <ClientCard></ClientCard>)
+          [1, 2, 3, 4, 5].map(item => <ClientCard key={item}/>)
         }
       </div>
     </section>

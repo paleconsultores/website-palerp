@@ -16,7 +16,6 @@ export function Services() {
       alt: 'training',
       title: 'Capacitaciones',
       description: 'Brindamos capacitaciones, para que se familiaricen con nuestro servicio, absorviendo sus dudas',
-      alt:'Capacitaciones',
       imageUrl:capacitacion
     },
     {
@@ -24,7 +23,6 @@ export function Services() {
       alt: 'devTeam',
       title: 'Equipo de desarrollo',
       description: 'Contamos y trabajamos con tecnología de vanguardia para nuestros sistemas de gestión y nuestros productos tecnológicos',
-      alt:'Capacitaciones',
       imageUrl:desarrollo
     },
     {
@@ -32,7 +30,6 @@ export function Services() {
       alt: 'support',
       title: 'Soporte',
       description: 'Resolvemos tus dudas, brindandote soporte 15/6, con respuestas inmediatas y tu operacion este asegurada',
-      alt:'Capacitaciones',
       imageUrl:soporte
     },
     {
@@ -40,7 +37,6 @@ export function Services() {
       alt: 'sales',
       title: 'Ventas',
       description: 'Resolvemos tus dudas, brindandote soporte 15/6, con respuestas inmediatas y tu operacion este asegurada',
-      alt:'Capacitaciones',
       imageUrl:ventas
     }
   ]
@@ -54,11 +50,11 @@ export function Services() {
       <div className="services__info">
         {_cards.map((card) => 
           <CardService
+            key = {_cards.indexOf(card)}
             type = {card.type}
             alt = {card.alt}
             title = {card.title}
-            alt={card.alt}
-            imageUrl={card.imageUrl}
+            imageUrl = {card.imageUrl}
           >{card.description}</CardService>
         )}
       </div>

@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export const Footer = () => {
   return(
     <footer>
+
       <div className="footer_info">
         <div>
           <img className="logo_Footer" src={logoPale}></img>
