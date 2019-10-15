@@ -14,7 +14,6 @@ export function CarouselCard ({property}) {
                 <p>
                     {text}
                 </p>
-
             </div>
         </div>
     )

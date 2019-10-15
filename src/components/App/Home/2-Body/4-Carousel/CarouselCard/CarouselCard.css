@@ -5,19 +5,14 @@
   display: flex;
   flex: 1;
   min-width: 1200px;
-  opacity: 1;
-  transition: opacity linear;
   border: 1px solid black;
   text-align:  center;
   background: #FFFFFF;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.60);
   border-radius: 8px 8px 8px 8px;
-  overflow: hidden;
   align-content: center;
   align-items: center;
   margin-top: 20px;
-
-
 }
 /*image of Carousel Card Component*/
 .carousel-card__image{
@@ -31,6 +26,7 @@
 /*Text of Carousel Card Component*/
 .carousel-card__text{
   background: #24D9CF;
+  height: 20em;
   align-items: center;
   margin-top: 1px;
   font-size: 1.6em;
@@ -43,7 +39,7 @@
   }
   .carousel-card__image{
     width: 50%;
-    height: 50vh;
+    height: 65vh;
     padding-top: 5%;
     padding-bottom: 5%;
     margin: auto;
@@ -51,6 +47,7 @@
   }
   .carousel-card__text{
     background: #24D9CF;
+    height: 65vh;
     align-items: center;
     margin-top: 1px;
     font-size: 1.3em;
@@ -72,6 +69,7 @@
   }
   .carousel-card__text{
     background:#69B4CA;
+    height: 22vh;
     align-items: center;
     margin-top: 1px;
     font-size: 1.3em;
@@ -94,8 +92,9 @@
   .carousel-card__text{
     background: #24D9CF;
     align-items: center;
+    height: 50%;
     margin-top: 1px;
-    font-size: 1.3em;
+    font-size: 1.6vw;
     color: white;
   }
 } 
@@ -111,8 +110,9 @@
   }
   .carousel-card__text{
     background: #24D9CF;
+    height: 60%;
     align-items: center;
-    font-size: 1.3em;
+    font-size: 2vw;
     color: white;
   }
 }
