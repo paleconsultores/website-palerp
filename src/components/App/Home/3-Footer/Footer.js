@@ -37,8 +37,8 @@ export const Footer = () => {
             </div>
         </div>
       </div>
-      <div>
-        <h1>2019 PALERP</h1>
+      <div className="copyrigth">
+        <h1>Copyright © 2019 Pale Consultores</h1>
       </div>
       <div></div>
     </footer>
