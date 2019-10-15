@@ -3,6 +3,10 @@
   grid-template: auto 1fr / minmax(200px, 1200px);
   justify-content: center;
 }
+.services__title{
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
 
 .services__info {
   display: grid;

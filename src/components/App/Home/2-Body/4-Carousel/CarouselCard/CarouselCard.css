@@ -4,9 +4,18 @@
   width: 100%;
   display: grid;
   grid-template: 1fr / 1fr 1fr;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   /*justify-content: center;*/
   text-align:  center;
+  background: #FFFFFF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.60);
+  border-radius: 8px 8px 8px 8px;
+  overflow: hidden;
+  align-content: center;
+  align-items: center;
+  margin-top: 20px;
+
+
 }
 /*image of Carousel Card Component*/
 .carousel-card__image{
@@ -19,13 +28,12 @@
 }
 /*Text of Carousel Card Component*/
 .carousel-card__text{
-  background: #24D9CF;
+  background: #69B4CA;
   max-width: 1200px;
   align-items: center;
   margin-top: 1px;
   font-size: 1.6em;
   color: white;
-
 }
 /*Media Query for a medium deskptop screen*/
 @media screen and (max-width: 1000px){
@@ -38,7 +46,7 @@
   
   }
   .carousel-card__text{
-    background: #24D9CF;
+    background:#69B4CA;
     align-items: center;
     margin-top: 1px;
     font-size: 1.3em;
