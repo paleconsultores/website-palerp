@@ -8,6 +8,8 @@
 .client-list__title {
   width: 90%;
   justify-self: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 /* Client Cards of Client list component*/

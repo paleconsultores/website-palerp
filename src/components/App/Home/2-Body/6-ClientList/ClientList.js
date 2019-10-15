@@ -13,7 +13,9 @@ import image6 from './ClientCard/images/pale-consultores-150x150.jpg';
 import image7 from './ClientCard/images/distribuciones-san-andres-150x150.jpg';
 import image8 from './ClientCard/images/grifo-colcamayo-150x150.jpg';
 import image9 from './ClientCard/images/grifo-virgen-natividad-150x150.jpg';
-
+import image10 from './ClientCard/images/grifo-rural-alianza-150x150.jpg';
+import image11 from './ClientCard/images/importaciones-gary-tec-150x150.jpg';
+import image12 from './ClientCard/images/servicentro-pavel-dark-150x150.jpg';
 
 export function ClientList() {
   const _cardsImages= [
@@ -52,6 +54,18 @@ export function ClientList() {
     {
       
       image: image9,
+    },
+    {
+      
+      image: image10,
+    },
+    {
+      
+      image: image11,
+    },
+    {
+      
+      image: image12,
     },
 
   ];
