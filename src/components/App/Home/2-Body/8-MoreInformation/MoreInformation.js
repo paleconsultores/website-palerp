@@ -8,14 +8,14 @@ import './MoreInformation.css';
 
 
 export function MoreInformation(){
-  const _formInformations = [
-    {
-      type: 1,
-      title: 'MAS INFORMACIÓN',
-      subtitle:'E-mail'
-    }
-  ];
-
+    const _formInformations = [
+        {
+          type: 1,
+          title: 'MAS INFORMACIÓN',
+          subtitle:'E-mail'
+         
+        }
+      ];
   return(
     <section id="MoreInformation" className="moreInformation">
       <div className="moreInformation_info">

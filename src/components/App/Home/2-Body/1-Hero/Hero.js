@@ -2,8 +2,8 @@
 import React from 'react';
 
 //Resources
-import redhex from './images/red7.png';
-import redhexs from './images/red7s.png';
+import redhex from './images/red7.webp';
+import redhexs from './images/red7s.webp';
 import './Hero.css';
 
 export function Hero() {

@@ -1,4 +1,4 @@
-//Dependecies
+//Dependencies
 import React from "react";
 //Resources
 import { data } from './CarouselData'
@@ -63,8 +63,8 @@ export class Carousel extends React.Component {
                         {
                             properties.map(property => <CarouselCard key={property.id} property={property}/>)
                         }
-                    </div>  
-                </div>
+                    </div>
+                </div>  
             </section>
         );
     }
