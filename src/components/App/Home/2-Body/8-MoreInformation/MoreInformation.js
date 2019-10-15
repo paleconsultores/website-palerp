@@ -16,31 +16,25 @@ export function MoreInformation(){
          
         }
       ];
-
-    return(
-            <section id="MoreInformation" className="moreInformation">
-                <div className="moreInformation_info">
-                    {_formInformations.map((form) =>
-                    < FormInformation
-                        key = {_formInformations.indexOf(form)}
-                        type = {_formInformations.type}
-                        title = {form.title}
-                        subtitle={form.subtitle}
-                    />
-                    )}
-
-                </div>
-                   
-
-            </section>
-
-        );
-    }
+  return(
+    <section id="MoreInformation" className="moreInformation">
+      <div className="moreInformation_info">
+        {_formInformations.map((form) =>
+          <FormInformation
+            key = {_formInformations.indexOf(form)}
+            type = {form.type}
+            title = {form.title}
+            subtitle={form.subtitle}
+          />
+        )}
+      </div>
+    </section>
+  );
+}
 
 MoreInformation.propTypes = {
     type: PropTypes.number,
     serviceClass: PropTypes.string,
     title: PropTypes.string,
     subtitle:PropTypes.string
-   
-  }
+};
