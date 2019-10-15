@@ -75,9 +75,7 @@ export function ClientList() {
         <p className="title title--large title--green">Nuestros casos de éxito</p>
       </div>
       <div className="client-list-cards">
-        {/* {
-          [1, 2, 3, 4, 5].map(item => <ClientCard key={item}/>)
-        } */}
+       
 
           {_cardsImages.map((imagen) =>
               < ClientCard

@@ -6,7 +6,7 @@ footer {
   display: grid;
   grid-template-rows:auto 1fr;
   padding:2em 1rem;
-  background: #43425D;
+  background: #1f1f1f;
   height: auto;
   
 }
