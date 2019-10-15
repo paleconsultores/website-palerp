@@ -74,6 +74,7 @@ export function ClientList() {
         <p className="title title--large title--green">Nuestros casos de éxito</p>
       </div>
       <div className="client-list-cards">
+
         {_cardsImages.map((card) =>
           < ClientCard
             key = {_cardsImages.indexOf(card)}
@@ -81,6 +82,7 @@ export function ClientList() {
             alt={card.alt}
           />
         )}
+
       </div>
     </section>
   );
