@@ -61,7 +61,7 @@ export class Carousel extends React.Component {
                   'transform': `translateX(-${property.index*(100/properties.length)}%)`
                         }}>
                         {
-                            properties.map(property => <CarouselCard key={property._id} property={property} />)
+                            properties.map(property => <CarouselCard key={property.id} property={property} />)
                         }
                     </div>  
                 </div>
