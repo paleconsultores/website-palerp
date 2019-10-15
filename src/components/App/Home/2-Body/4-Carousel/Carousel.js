@@ -1,4 +1,4 @@
-//Dependecies
+//Dependencies
 import React from "react";
 //Resources
 import { data } from './CarouselData'

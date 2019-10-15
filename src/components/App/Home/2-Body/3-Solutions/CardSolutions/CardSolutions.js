@@ -3,7 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 //Resources
-import DEFAULT_IMAGE from "./images/consulta.jpg";
+import DEFAULT_IMAGE from "./images/consulta.webp";
 import './CardSolutions.css';
 
 export function CardSolutions(

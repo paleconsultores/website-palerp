@@ -7,7 +7,7 @@ import { MenuList } from "./MenuList";
 
 
 import './Header.css'
-import logoPale from '../../../../images/Logo_Pale_Negativo_Imagen.png';
+import logoPale from '../../../../images/Logo_Pale_Negativo_Imagen.webp';
 
 export function Header() {
   return(
