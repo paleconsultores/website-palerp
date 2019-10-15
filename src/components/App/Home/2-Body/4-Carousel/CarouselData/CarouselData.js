@@ -1,5 +1,4 @@
 import img1 from '../images/img1.jpg'
-import img4 from '../images/img4.jpg';
 import img2 from '../images/facturacionElectronica.jpg';
 export const data = {
     "properties":[
@@ -26,15 +25,5 @@ export const data = {
             "title":"Facturación Electrónica",
             "text":"Es nuestra solución de facturación electrónica que emite y recibe comprobantes de pago de forma fácil, rápida y segura."
         }
-         //,
-        // {
-        //     "id":"imagen4",
-        //     "index":3,
-        //     "picture":img1,
-        //     "title":"Misión",
-        //     "text":"Es nuestra solución de facturación electrónica que emite y recibe comprobantes de pago de forma fácil, rápida y segura."
- 
-        // },
-        
     ]
 }

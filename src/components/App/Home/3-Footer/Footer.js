@@ -4,7 +4,7 @@ import React from 'react';
 //Recursos
 import './styles.css'
 import logoPale from '../../../../images/Logo_Pale_Negativo_Imagen.png';
-import { faFacebookSquare,faYoutube,faWhatsappSquare, faYoutubeSquare} from "@fortawesome/free-brands-svg-icons";
+import { faFacebookSquare,faWhatsappSquare, faYoutubeSquare} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Footer = () => {
@@ -13,7 +13,7 @@ export const Footer = () => {
 
       <div className="footer_info">
         <div>
-          <img className="logo_Footer" src={logoPale}></img>
+          <img className="logo_Footer" src={logoPale} alt="logo_footer"></img>
         </div>
         <div>
           <h5>Urb.Marcavalle E-15,Cusco-Cusco</h5>
@@ -37,8 +37,8 @@ export const Footer = () => {
             </div>
         </div>
       </div>
-      <div className="copyrigth">
-        <h1>Copyright © 2019 Pale Consultores</h1>
+      <div>
+        <h1>2019 PALERP</h1>
       </div>
       <div></div>
     </footer>
