@@ -1,19 +1,21 @@
 /* Client List component */
 .client-list {
   display: grid;
-  grid-template: 1fr / 1fr;
+  grid-template: 1fr / minmax(100px, 1200px);
+  justify-content: center;
 }
 
-.client-list__title--green {
-  color: #00BB8D;
-  font-size: 95px;
-  margin:0;
+.client-list__title {
+  width: 90%;
+  justify-self: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 /* Client Cards of Client list component*/
 .client-list-cards {
-  white-space: nowrap;
-  overflow: scroll;
-  width: 80%;
+  /* white-space: nowrap;
+  overflow: scroll; */
+  width: 90%;
   justify-self: center;
 }
