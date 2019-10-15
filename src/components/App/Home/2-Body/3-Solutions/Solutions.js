@@ -33,7 +33,7 @@ export function Solutions() {
 
   return (
     <section id="Solutions" className="solutions">
-      <div>
+      <div className="solutions_title">
         <h1 className="title title--medium title--red">Nuestras</h1>
         <h1 className="title title--large title--green">Soluciones</h1>
       </div>
