@@ -5,7 +5,7 @@
   display: flex;
   flex: 1;
   min-width: 1200px;
-  opacity: 0;
+  opacity: 1;
   transition: opacity linear;
   border: 1px solid black;
   text-align:  center;
@@ -28,6 +28,27 @@
   color: white;
 
 }
+@media screen and (max-width: 1354px){
+  .carousel-card{
+    min-width: 89vw;
+    height: 35em;
+  }
+  .carousel-card__image{
+    width: 50%;
+    height: 50vh;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: auto;
+  
+  }
+  .carousel-card__text{
+    background: #24D9CF;
+    align-items: center;
+    margin-top: 1px;
+    font-size: 1.3em;
+    color: white;
+  }
+}  
 /*Media Query for a medium deskptop screen*/
 @media screen and (max-width: 1052px){
   .carousel-card{
