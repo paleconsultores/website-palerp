@@ -27,29 +27,17 @@ export class Body extends React.Component {
               Somos una empresa de consultoría y desarrollo de software,dedicada a brindar soluciones a empresas en distintos rubros
             </Message>
         </section>
-        <section id="Information">
-            <Information/>
-        </section>
-        <section id="Solutions">
-            <Solutions/>
-        </section>
+        <Information/>
+        <Solutions/>
         <section>
             <Message>
               Conoce mas sobre nuestro trabajo
             </Message>
         </section>
-        <section id="Carousel">
-             <Carousel/>
-        </section>
-        <section id="Services">
-             <Services/>
-        </section>
-        <section id="ClientesList">
-            <ClientList/>
-        </section>
-        <section id="MoreInformation">
-          <MoreInformation/>
-        </section>    
+        <Carousel/>
+        <Services/>
+        <ClientList/>
+        <MoreInformation/>
       </div>
     );
   }

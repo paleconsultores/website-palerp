@@ -2,25 +2,22 @@
 /*Carousel Card component*/
 .carousel-card{
   width: 100%;
-  display: grid;
-  grid-template: 1fr / 1fr 1fr;
-  /* border: 1px solid black; */
-  /*justify-content: center;*/
+  display: flex;
+  flex: 1;
+  min-width: 1200px;
+  border: 1px solid black;
   text-align:  center;
   background: #FFFFFF;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.60);
   border-radius: 8px 8px 8px 8px;
-  overflow: hidden;
   align-content: center;
   align-items: center;
   margin-top: 20px;
-
-
 }
 /*image of Carousel Card Component*/
 .carousel-card__image{
-  width: 70%;
-  height: 30vh;
+  width: 50%;
+  height: 20em;
   padding-top: 5%;
   padding-bottom: 5%;
   margin: auto;
@@ -28,15 +25,40 @@
 }
 /*Text of Carousel Card Component*/
 .carousel-card__text{
-  background: #69B4CA;
-  max-width: 1200px;
+  background: #24D9CF;
+  height: 20em;
   align-items: center;
   margin-top: 1px;
   font-size: 1.6em;
   color: white;
 }
+@media screen and (max-width: 1354px){
+  .carousel-card{
+    min-width: 89vw;
+    height: 35em;
+  }
+  .carousel-card__image{
+    width: 50%;
+    height: 65vh;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: auto;
+  
+  }
+  .carousel-card__text{
+    background: #24D9CF;
+    height: 65vh;
+    align-items: center;
+    margin-top: 1px;
+    font-size: 1.3em;
+    color: white;
+  }
+}  
 /*Media Query for a medium deskptop screen*/
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1052px){
+  .carousel-card{
+    min-width: 95vw;
+  }
   .carousel-card__image{
     width: 50%;
     height: 22vh;
@@ -47,24 +69,50 @@
   }
   .carousel-card__text{
     background:#69B4CA;
+    height: 22vh;
     align-items: center;
     margin-top: 1px;
     font-size: 1.3em;
     color: white;
-    
-  
   }
-}
-/*Media Query for a small device*/
-@media screen and (max-width: 480px){
+}  
+@media screen and (max-width: 768px){
+  .carousel-card{
+    min-width: 95vw;
+    height: 32em;
+  }
   .carousel-card__image{
-    width: 100%;
-    height: 20vh;
+    width: 50%;
+    height: 50%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: auto;
+  
   }
   .carousel-card__text{
     background: #24D9CF;
     align-items: center;
-    font-size: 1.3em;
+    height: 50%;
+    margin-top: 1px;
+    font-size: 1.6vw;
+    color: white;
+  }
+} 
+/*Media Query for a small device*/
+@media screen and (max-width: 480px){
+  .carousel-card{
+    min-width: 36em;
+    height: 30em;
+  }
+  .carousel-card__image{
+    width: 45%;
+    height: 60%;
+  }
+  .carousel-card__text{
+    background: #24D9CF;
+    height: 60%;
+    align-items: center;
+    font-size: 2vw;
     color: white;
   }
 }

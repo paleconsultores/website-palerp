@@ -20,72 +20,69 @@ import image12 from './ClientCard/images/servicentro-pavel-dark-150x150.jpg';
 export function ClientList() {
   const _cardsImages= [
     {
-      
+      alt: "Etapoy",
       image: image1,
     },
     {
-      
+      alt: "Grifo el Imperio",
       image: image2,
     },
     {
-      
+      alt: "Grifo Gabriel",
       image: image3,
     },
     {
-      
+      alt: "Grifo Malaga",
       image: image4,
     },
     {
-      
+      alt: "Grifo Manu",
       image: image5,
     },
     {
-      
+      alt: "Pale Consultores",
       image: image6,
     },
     {
-      
+      alt: "Distribuciones San Andres",
       image: image7,
     },
     {
-      
+      alt: "Grifo Cocalmayo",
       image: image8,
     },
     {
-      
+      alt: "Grifo Virgen Natividad",
       image: image9,
     },
     {
-      
+      alt: "Grifo Rural Alianza",
       image: image10,
     },
     {
-      
+      alt: "Importaciones Gary",
       image: image11,
     },
     {
-      
+      alt: "Servicentro Pavel",
       image: image12,
     },
-
   ];
   return (
-    <section className="client-list">
+    <section id="ClientList" className="client-list">
       <div className="client-list__title">
         <p className="title title--large title--green">Nuestros casos de éxito</p>
       </div>
       <div className="client-list-cards">
-       
 
-          {_cardsImages.map((imagen) =>
-              < ClientCard
-              key = {_cardsImages.indexOf(imagen)}
-              image={imagen.image}
-              
-            />
-            )}    
+        {_cardsImages.map((card) =>
+          < ClientCard
+            key = {_cardsImages.indexOf(card)}
+            image={card.image}
+            alt={card.alt}
+          />
+        )}
 
-         
       </div>
     </section>
   );

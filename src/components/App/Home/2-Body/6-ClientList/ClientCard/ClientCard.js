@@ -8,16 +8,18 @@ import './ClientCard.css';
 
 export function ClientCard(
   {
-    image = DEFAULT_IMAGE
+    image = DEFAULT_IMAGE,
+    alt = "default alt"
   }) 
 {
   return (
     <div className="ClientCard">
-      <img className="image" src={image}></img>
+      <img className="image" src={image} alt={alt}></img>
     </div>
   );
 }
 
 ClientCard.propTypes = {
-  image: PropTypes.string
+  image: PropTypes.string,
+  alt: PropTypes.string
 }
