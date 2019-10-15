@@ -18,7 +18,7 @@ export function MoreInformation(){
       ];
 
     return(
-            <section className="moreInformation">
+            <section id="MoreInformation" className="moreInformation">
                 <div className="moreInformation_info">
                     {_formInformations.map((form) =>
                     < FormInformation

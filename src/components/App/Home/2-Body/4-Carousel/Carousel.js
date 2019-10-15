@@ -49,11 +49,11 @@ export class Carousel extends React.Component {
     render() {
         const { properties, property } = this.state;
         return (
-            <div>
+            <section id="Carousel">
                 <div className="carousel-slider">
                     <CarouselCard property={property} />
                 </div>
-            </div>
+            </section>
         );
     }
 }
