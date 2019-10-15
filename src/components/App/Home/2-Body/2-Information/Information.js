@@ -23,7 +23,7 @@ export function Information(){
   ];
 
   return(
-    <section className="information">
+    <section id="Information" className="information">
       <div className="information__info">
         <div>
           { _cardInformation.map((information) =>

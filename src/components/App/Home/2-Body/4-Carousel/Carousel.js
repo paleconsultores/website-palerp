@@ -64,7 +64,6 @@ export class Carousel extends React.Component {
                             properties.map(property => <CarouselCard key={property._id} property={property} />)
                         }
                     </div>  
-                </div>
             </section>
         );
     }

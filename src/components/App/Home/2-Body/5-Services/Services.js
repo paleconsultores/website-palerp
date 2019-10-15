@@ -42,7 +42,7 @@ export function Services() {
   ]
 
   return (
-    <section className="services">
+    <section id="Services" className="services">
       <div className="services__title">
         <h1 className="title title--medium title--green">Mundo</h1>
         <h1 className="title title--large title--red">Palerp</h1>

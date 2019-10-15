@@ -70,7 +70,7 @@ export function ClientList() {
 
   ];
   return (
-    <section className="client-list">
+    <section id="ClientList" className="client-list">
       <div className="client-list__title">
         <p className="title title--large title--green">Nuestros casos de éxito</p>
       </div>
