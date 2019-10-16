@@ -23,17 +23,6 @@
   width: 600px;
   height: 609px;
   transform-origin: 43% 33%;
-  animation: rotateHexImg 10s linear infinite;
-}
-
-/* keyframes for hexagons rotation */
-@keyframes rotateHexImg {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
 }
 
 @-webkit-keyframes rotateHexImg {
