@@ -1,4 +1,4 @@
-//Dependecies
+//Dependencies
 import React from "react";
 //Resources
 import { data } from './CarouselData'
@@ -58,10 +58,10 @@ export class Carousel extends React.Component {
                 <div className={`carousel-slider active-slide-${property.index}`}>
                     {/*calculate where in the wrapper is the next card */}
                     <div className="carousel-slider-wrapper" style={{
-                  'transform': `translateX(-${property.index*(100/properties.length)}%)`
+                        'transform': `translateX(-${property.index*(100/properties.length)}%)`
                         }}>
                         {
-                            properties.map(property => <CarouselCard key={property.id} property={property} />)
+                            properties.map(property => <CarouselCard key={property.id} property={property}/>)
                         }
                     </div>
                 </div>  

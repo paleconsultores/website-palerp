@@ -30,11 +30,13 @@ html {
 /* title element with green modifier*/
 .title--green {
   color:#69B4CA;
+
 }
 
 /* title element with red modifier*/
 .title--red {
   color: #FF4544;
+ 
 }
 
 /* title element with gray modifier*/
@@ -57,6 +59,10 @@ html {
   font-size: 3.75rem; /* 60px */
 }
 
+/*x medium title */
+.title--x-medium{
+ font-size:2.1875rem;/*35px*/
+}
 /* large title */
 .title--large {
   font-size: 5rem; /* 80px */
