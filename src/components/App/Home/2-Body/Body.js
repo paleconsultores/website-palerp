@@ -23,16 +23,16 @@ export class Body extends React.Component {
             <Hero />
         </section>
         <section>
-            <Message>
-              Somos una empresa de consultoría y desarrollo de software,dedicada a brindar soluciones a empresas en distintos rubros
-            </Message>
+          <Message>
+            Somos una empresa de consultoría y desarrollo de software,dedicada a brindar soluciones a empresas en distintos rubros
+          </Message>
         </section>
         <Information/>
         <Solutions/>
         <section>
-            <Message>
-              Conoce mas sobre nuestro trabajo
-            </Message>
+          <Message>
+            Conoce mas sobre nuestro trabajo
+          </Message>
         </section>
         <Carousel/>
         <Services/>

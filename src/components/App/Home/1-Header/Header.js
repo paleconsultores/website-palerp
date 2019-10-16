@@ -13,7 +13,7 @@ export function Header() {
   return(
     <header className="header">
       <nav className="header__navbar topnav">
-        <a href="/" className="header__brand">
+        <a href="#Hero" className="header__brand">
           <img className="header__brand-image" src={logoPale} alt="logoPale" />
         </a>
         <BurgerMenu />
