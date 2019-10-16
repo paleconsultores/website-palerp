@@ -3,10 +3,10 @@ import React from "react";
 
 //Resources
 import { CardService } from "./CardService";
-import capacitacion from "./CardService/images/capacitaciones.png";
-import soporte from "./CardService/images/soporteHardware.jpg";
-import desarrollo from "./CardService/images/Entornodigital.jpg";
-import ventas from "./CardService/images/ventas.png";
+import capacitacion from "./CardService/images/capacitaciones.webp";
+import soporte from "./CardService/images/soporteHardware.webp";
+import desarrollo from "./CardService/images/Entornodigital.webp";
+import ventas from "./CardService/images/ventas.webp";
 import './Services.css';
 
 export function Services() {
