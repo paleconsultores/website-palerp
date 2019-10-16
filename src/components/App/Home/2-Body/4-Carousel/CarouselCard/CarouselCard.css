@@ -35,11 +35,11 @@
 @media screen and (max-width: 1354px){
   .carousel-card{
     min-width: 89vw;
-    height: 35em;
+    height: 36em;
   }
   .carousel-card__image{
     width: 50%;
-    height: 65vh;
+    height: 23vh;
     padding-top: 5%;
     padding-bottom: 5%;
     margin: auto;
@@ -47,7 +47,7 @@
   }
   .carousel-card__text{
     background: #24D9CF;
-    height: 65vh;
+    height: 28vh;
     align-items: center;
     margin-top: 1px;
     font-size: 1.3em;
@@ -101,7 +101,7 @@
 /*Media Query for a small device*/
 @media screen and (max-width: 480px){
   .carousel-card{
-    min-width: 36em;
+    min-width: 94vw;
     height: 30em;
   }
   .carousel-card__image{
@@ -116,3 +116,4 @@
     color: white;
   }
 }
+
