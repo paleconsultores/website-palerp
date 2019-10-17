@@ -24,6 +24,9 @@
   height: 609px;
   transform-origin: 43% 33%;
   animation: rotateHexImg 10s linear infinite;
+  -webkit-animation: rotateHexImg 10s linear infinite; /* Safari 4+ */
+  -moz-animation:rotateHexImg 10s linear infinite; /* Fx 5+ */
+  -o-animation: rotateHexImg 10s linear infinite; /*Opera 12+ */
 }
 
 /* keyframes for hexagons rotation */
@@ -34,7 +37,9 @@
   to {
     transform: rotate(359deg);
   }
+
 }
+
 
 /* shadow modifier */
 .image-hex--shadow {
