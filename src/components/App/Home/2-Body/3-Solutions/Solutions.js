@@ -8,7 +8,6 @@ import developing from './CardSolutions/images/DesarrolloSoftware.png';
 import image2 from './CardSolutions/images/HardwareySoftware.png';
 import './Solutions.css';
 
-
 export function Solutions() {
   const _cardsSolutions = [
     {
