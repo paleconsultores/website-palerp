@@ -8,6 +8,12 @@
     justify-items: center;
 }
 
+.menu-list li {
+    align-self: center;
+    padding: .5rem;
+    border-radius: 5px;
+}
+
 .menu-list li a{
     color: white;
     text-align: center;
@@ -17,9 +23,13 @@
     font-weight: bold;
 }
 
+.menu-list li:hover {
+    background-color: rgba(105, 180, 202, 0.8);
+}
+
 @media screen and (max-width: 1011px) {
     .menu-list {
-        grid-template: repeat(3, 1fr) / 1fr;
+        grid-template: repeat(3, minmax(50px, 1fr)) / 1fr;
         display: none;
         justify-items: normal;
     }

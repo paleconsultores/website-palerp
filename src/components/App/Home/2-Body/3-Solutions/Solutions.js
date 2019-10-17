@@ -3,9 +3,9 @@ import React from "react";
 
 //Resources
 import { CardSolutions } from "./CardSolutions";
-import image1 from './CardSolutions/images/consulta.webp';
-import developing from './CardSolutions/images/DesarrolloSoftware.webp';
-import image2 from './CardSolutions/images/HardwareySoftware.webp';
+import image1 from './CardSolutions/images/consulta.jpg';
+import developing from './CardSolutions/images/DesarrolloSoftware.png';
+import image2 from './CardSolutions/images/HardwareySoftware.png';
 import './Solutions.css';
 
 export function Solutions() {

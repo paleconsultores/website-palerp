@@ -3,7 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 //Resources
-import DEFAULT_IMAGE from "../images/imagen1.webp";
+import DEFAULT_IMAGE from "../images/imagen1.jpg";
 import './Image.css';
 
 export function Image(
