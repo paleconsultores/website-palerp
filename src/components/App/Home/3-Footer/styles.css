@@ -27,6 +27,7 @@ footer {
 
 .footer_servicios p{
   color: #808495;
+  font-size: 1rem;
 }
 
 .footer_info_subtitulos{
@@ -58,6 +59,7 @@ footer {
 }
 .footer_info p{
   color: #808495;
+  font-size: 1rem;
 }
 .logo_Footer {
     margin-block-start: 14.940px;
@@ -89,12 +91,31 @@ footer {
     background-color: #69B4CA;
     height: 2px;
     margin-left: 0%;
-    width:6.25rem;
+    width:7.5rem;
 }
   .footer_servicios{
     grid-template: repeat(1, minmax(auto, 1fr)) / 1fr;
     
   }
+  .footer_info p{
+    color: #808495;
+    font-size: 1.6rem;
+  }
+  
+  .footer_info_subtitulos{
+    font-size: 1.7rem;
+  }
+  .footer_info h4 {
+    font-size: 1.7rem;
+  }
+  .copyrigth p{
+    font-size:1.5rem ;
+  }
+  .logo_Footer {
+    width:7rem;
+    height: 2.125rem; 
+  }
+  
 } 
 
 @media screen and (max-width : 1024px){
@@ -109,11 +130,24 @@ footer {
     background-color: #69B4CA;
     height: 2px;
     margin-left: 0%;
-    width: 6.25rem;
+    width: 7.5rem;
   }
   .logo_Footer {
-    
-    width:6.375rem;
+    width:7rem;
     height: 2.125rem; 
-}
+  }
+  .footer_info p{
+    color: #808495;
+    font-size: 1.6rem;
+  }
+  .footer_info h4 {
+    font-size: 1.7rem;
+  }
+  .footer_info_subtitulos{
+    font-size: 1.7rem;
+  }
+  .copyrigth p{
+    font-size:1.5rem ;
+  }
+  
 } 
