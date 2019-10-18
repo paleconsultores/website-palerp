@@ -22,7 +22,7 @@ footer {
   display: grid;
   margin: 0 auto;
   grid-template: repeat(1,auto)/repeat(1,245px 245px);
-  gap: 2rem;
+  /* gap: 1rem; */
   justify-content: center;
 }
 
@@ -55,15 +55,14 @@ footer {
     background-color: #69B4CA;
     height: 2px;
     margin-left: 0%;
-    width: 85%;
+    width: 60%;
 }
 .footer_info p{
   color: #808495;
 }
 .logo_Footer {
-  width:80%;
-  height: 5.125rem; 
-
+  width:50%;
+  height: 2.125rem; 
 }
 .social{
   padding:  0.3125rem;
@@ -93,7 +92,9 @@ footer {
 }
   .footer_servicios{
     grid-template: repeat(1, minmax(auto, 1fr)) / 1fr;
+    
   }
+
 } 
 
 @media screen and (max-width : 1024px){
@@ -102,16 +103,16 @@ footer {
   }
   .logo_Footer {
     width:50%;
-    height:85px; 
+    height:35px; 
   }
   .footer_servicios{
-    grid-template: repeat(1, minmax(auto, 1fr)) / 1fr;
+    grid-template: repeat(1, minmax(auto, 1fr)) /1fr;
   }
   .footer_info hr{
     background-color: #69B4CA;
     height: 2px;
     margin-left: 0%;
     width: 65%;
-}
+  }
 } 
 
