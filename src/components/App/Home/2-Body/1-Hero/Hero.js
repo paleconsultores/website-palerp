@@ -18,10 +18,25 @@ export function Hero() {
   return(
     <section className="hero" >
       <div className="hero__hex-animation">
-        <img className="image-hex image-hex--shadow" src={redhexs} alt="Hexagon shadow" style={{transform: `rotate(${count}deg)`}}/>
-        <img className="image-hex" src={redhex} alt="Hexagon" style={{transform: `rotate(${count}deg)`}} />
+        <img src={redhexs} alt="Hexagon shadow" style={{
+          position: 'absolute',
+          top: '0px',
+          left: '0px',
+          width: '600px',
+          height: '609px',
+          transformOrigin: '50% 50%',
+          transform: `rotate(${count}deg)`
+        }}/>
+        <img src={redhex} alt="Hexagon" style={{
+          position: 'relative',
+          display: 'block',
+          width: '600px',
+          height: '609px',
+          transformOrigin: '43% 33%',
+          transform: `rotate(${count}deg)`
+        }} />
       </div>
-      <div className="hero-image"></div>
+      <div className="hero-image"/>
     </section>
   );
 }

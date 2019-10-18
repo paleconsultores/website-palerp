@@ -16,51 +16,13 @@
   top: 42%;
 }
 
-/* hexagon element */
-.image-hex {
-  position: relative;
-  display: block;
-  width: 600px;
-  height: 609px;
-  transform-origin: 43% 33%;
-  animation: rotateHexImg 10s linear infinite;
-  -webkit-animation: rotateHexImg 10s linear infinite; /* Safari 4+ */
-  -moz-animation:rotateHexImg 10s linear infinite; /* Fx 5+ */
-  -o-animation: rotateHexImg 10s linear infinite; /*Opera 12+ */
-}
-
-/* keyframes for hexagons rotation */
-@keyframes rotateHexImg {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(359deg);
-  }
-
-}
-
-
-/* shadow modifier */
-.image-hex--shadow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform-origin: 50% 50%;
-}
-
 /* hero image element */
 .hero-image{
   top: 0;
   left: 0;
   z-index: 0;
-  background-image: url('./images/fondo6.webp');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: local;
-  background-size: cover;
+  background: #ff4544;
   transform: translate3d(0px, 0px, 0px) scale(1);
   width: 100%;
   height: 100%;
- 
 }
