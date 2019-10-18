@@ -99,14 +99,19 @@ footer {
   }
   .footer_info p{
     color: #808495;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
   
   .footer_info_subtitulos{
-  
-    font-size: 1.6rem;
-  
+    font-size: 1.7rem;
   }
+  .footer_info h4 {
+    font-size: 1.7rem;
+  }
+  .copyrigth p{
+    font-size:1.5rem ;
+  }
+  
 } 
 
 @media screen and (max-width : 1024px){
@@ -129,11 +134,18 @@ footer {
   }
   .footer_info p{
     color: #808495;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
   .footer_info h4 {
     
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     
   }
+  .footer_info_subtitulos{
+    font-size: 1.7rem;
+  }
+  .copyrigth p{
+    font-size:1.5rem ;
+  }
+  
 } 
