@@ -22,7 +22,6 @@ footer {
   display: grid;
   margin: 0 auto;
   grid-template: repeat(1,auto)/repeat(1,245px 245px);
-  /* gap: 1rem; */
   justify-content: center;
 }
 
@@ -94,7 +93,6 @@ footer {
     grid-template: repeat(1, minmax(auto, 1fr)) / 1fr;
     
   }
-
 } 
 
 @media screen and (max-width : 1024px){
