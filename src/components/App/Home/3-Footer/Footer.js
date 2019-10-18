@@ -20,7 +20,7 @@ export const Footer = () => {
         </div>
         
         <div>
-          <h5>Siguenos en:</h5>
+          <h2 className="footer_info_subtitulos">Síguenos en:</h2>
             <div>
               <a  className="social" href="https://www.youtube.com/PaleConsultores">
                 <FontAwesomeIcon icon={faYoutubeSquare} size="3x" color="white"/>
@@ -36,7 +36,7 @@ export const Footer = () => {
         </div>
 
         <div>
-            <h5>Servicios</h5>
+            <h2 className="footer_info_subtitulos">Servicios</h2>
               <div className="footer_servicios">
                   <div>
                       <p>Aplicaciones Web</p>

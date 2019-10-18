@@ -29,11 +29,11 @@ footer {
   color: #808495;
 }
 
-.footer_info h5 {
-  margin: .6em 0;
+.footer_info_subtitulos{
+  
   color: white;
   font-family:  'Open Sans',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.125rem;
   
 }
 .footer_info h4 {
@@ -54,19 +54,21 @@ footer {
     background-color: #69B4CA;
     height: 2px;
     margin-left: 0%;
-    width: 60%;
+    width:9rem;
 }
 .footer_info p{
   color: #808495;
 }
 .logo_Footer {
-  width:50%;
-  height: 2.125rem; 
+    margin-block-start: 14.940px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    width:7.5rem;
+    height: 2.125rem; 
 }
 .social{
   padding:  0.3125rem;
   margin: 0 auto;
- 
 }
 .copyrigth{
   margin: .6em 0;
@@ -87,7 +89,7 @@ footer {
     background-color: #69B4CA;
     height: 2px;
     margin-left: 0%;
-    width: 65%;
+    width:6.25rem;
 }
   .footer_servicios{
     grid-template: repeat(1, minmax(auto, 1fr)) / 1fr;
@@ -99,10 +101,7 @@ footer {
   .footer_info {
     grid-template: repeat(1, minmax(auto, 1fr)) / 1fr;
   }
-  .logo_Footer {
-    width:50%;
-    height:35px; 
-  }
+ 
   .footer_servicios{
     grid-template: repeat(1, minmax(auto, 1fr)) /1fr;
   }
@@ -110,6 +109,11 @@ footer {
     background-color: #69B4CA;
     height: 2px;
     margin-left: 0%;
-    width: 65%;
+    width: 6.25rem;
   }
+  .logo_Footer {
+    
+    width:6.375rem;
+    height: 2.125rem; 
+}
 } 
