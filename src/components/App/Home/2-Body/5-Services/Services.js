@@ -3,10 +3,17 @@ import React from "react";
 
 //Resources
 import { CardService } from "./CardService";
-import capacitacion from "./CardService/images/capacitaciones.png";
-import soporte from "./CardService/images/soporteHardware.jpg";
-import desarrollo from "./CardService/images/Entornodigital.jpg";
-import ventas from "./CardService/images/ventas.png";
+import capacitacion from "./CardService/images/capacitaciones-800.jpg";
+import soporte from "./CardService/images/soporteHardware-800.jpg";
+import desarrollo from "./CardService/images/Entornodigital-800.jpg";
+import ventas from "./CardService/images/ventas-800.jpg";
+
+import capacitacionresp from "./CardService/images/capacitaciones-400.jpg";
+import soporteresp from "./CardService/images/soporteHardware-400.jpg";
+import desarrolloresp from "./CardService/images/Entornodigital-400.jpg";
+import ventasresp from "./CardService/images/ventas-400.jpg";
+
+
 import './Services.css';
 
 export function Services() {
@@ -16,28 +23,32 @@ export function Services() {
       alt: 'training',
       title: 'Capacitaciones',
       description: 'Brindamos capacitaciones, para que se familiaricen con nuestro servicio, absorviendo sus dudas',
-      imageUrl:capacitacion
+      imageUrl:capacitacion,
+      responsiveImages:capacitacionresp
     },
     {
       type: 2,
       alt: 'devTeam',
       title: 'Equipo de desarrollo',
       description: 'Contamos y trabajamos con tecnología de vanguardia para nuestros sistemas de gestión y nuestros productos tecnológicos',
-      imageUrl:desarrollo
+      imageUrl:desarrollo,
+      responsiveImages:desarrolloresp
     },
     {
       type: 1,
       alt: 'support',
       title: 'Soporte',
       description: 'Resolvemos tus dudas, brindandote soporte 15/6, con respuestas inmediatas y tu operacion este asegurada',
-      imageUrl:soporte
+      imageUrl:soporte,
+      responsiveImages:soporteresp
     },
     {
       type: 2,
       alt: 'sales',
       title: 'Ventas',
       description: 'Resolvemos tus dudas, brindandote soporte 15/6, con respuestas inmediatas y tu operacion este asegurada',
-      imageUrl:ventas
+      imageUrl:ventas,
+      responsiveImages:ventasresp
     }
   ]
 
@@ -55,6 +66,7 @@ export function Services() {
             alt = {card.alt}
             title = {card.title}
             imageUrl = {card.imageUrl}
+            responsiveImages={card.responsiveImages}
           >{card.description}</CardService>
         )}
       </div>
