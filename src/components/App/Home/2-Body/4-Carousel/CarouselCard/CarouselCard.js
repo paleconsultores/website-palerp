@@ -5,13 +5,10 @@ import PropTypes from 'prop-types'
 import './CarouselCard.css'
 
 export function CarouselCard ({property}) {
-    const {index, picture, title, text , responsivepicture} = property;
+    const {index, picture, title,text} = property;
     return (
         <div id={`card-${index}`} className="carousel-card">
-            <picture className="carousel-picture">
-                <source media="(max-width: 420px)" srcSet={responsivepicture}></source>
-                <img className="carousel-card__image" src={picture} alt="imageCarousel"/>
-            </picture>
+            <img className="carousel-card__image" src={picture} alt="imageCarousel"/>
             <div className="carousel-card__text">
                 <h1>{title}</h1>
                 <p>

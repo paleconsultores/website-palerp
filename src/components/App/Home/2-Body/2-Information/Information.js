@@ -4,7 +4,7 @@ import React from "react";
 //Resources
 import { CardInformation } from "./CardInformation";
 import { Image } from "./Image";
-import DEFAULT_IMAGE from "./images/informacion-800.jpg";
+import DEFAULT_IMAGE from "./images/imagen1.webp";
 import './Information.css';
 
 export function Information(){
