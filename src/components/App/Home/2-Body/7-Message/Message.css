@@ -1,5 +1,8 @@
 .message {
   background:#7cbdd1;
+  display: grid;
+  justify-content: center;
+  grid-template: 1fr / minmax(100px,1200px);
   color: white;
 }
 

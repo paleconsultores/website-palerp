@@ -48,7 +48,7 @@ export class Carousel extends React.Component {
     startCarousel = () => {
         setInterval(()=>{
             this.changeProperty()
-        },3000)
+        },5000)
     }
     render() {
         const { properties, property } = this.state;

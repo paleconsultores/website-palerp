@@ -1,8 +1,6 @@
 /*Carousel Card component*/
 .carousel-card{
   width: 100%;
-  /* display: flex;
-  flex: 1; */
   display: grid;
   grid-template: 1fr / 1fr 1fr;
   min-width: 1200px; 
@@ -72,7 +70,7 @@
 /*Media Query for a small device*/
 @media screen and (max-width: 480px){
   .carousel-card{
-    min-width: 93.9vw;
+    min-width: 98.9vw;
     height: 30em;
   }
   .carousel-card__image{
