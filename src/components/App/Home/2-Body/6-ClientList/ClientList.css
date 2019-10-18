@@ -3,6 +3,7 @@
   display: grid;
   grid-template: 1fr / minmax(100px, 1200px);
   justify-content: center;
+  padding: 5em 2.5rem;
 }
 
 .client-list__title {
