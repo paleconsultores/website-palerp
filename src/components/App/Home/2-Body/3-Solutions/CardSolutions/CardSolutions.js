@@ -3,7 +3,8 @@ import React from "react";
 import PropTypes from "prop-types";
 
 //Resources
-import DEFAULT_IMAGE from "./images/consulta.webp";
+import DEFAULT_IMAGE from "./images/consulta-800.jpg";
+import DEFAULT_IMAGE_RESP from "./images/consulta-400.jpg"
 import './CardSolutions.css';
 
 export function CardSolutions(
@@ -11,8 +12,8 @@ export function CardSolutions(
       type = 1,
       title = 'lorem', 
       imageUrl = DEFAULT_IMAGE,
+      responsiveimages = DEFAULT_IMAGE_RESP,
       alt = "image alternate text", 
-    
     }) 
   {
     if (type === 1) {
@@ -20,9 +21,12 @@ export function CardSolutions(
         <div className="card-solutions">
   
        <div className="card-solutions__sectionName">
-       <img
-           className="card-solutions__image"
-           src={imageUrl} alt={alt}/>
+        <picture>
+          <source media="(max-width: 420px)" srcSet={responsiveimages}/>
+          <img
+          className="card-solutions__image"
+          src={imageUrl} alt={alt}/>
+        </picture>
      
        </div>
       
@@ -43,5 +47,6 @@ export function CardSolutions(
     type: PropTypes.number,
     serviceClass: PropTypes.string,
     title: PropTypes.string,
-    image: PropTypes.string
+    image: PropTypes.string,
+    imagerespURL: PropTypes.string
   }
