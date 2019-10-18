@@ -3,7 +3,7 @@ import React from 'react';
 
 //Recursos
 import './styles.css'
-import logoPale from '../../../../images/Logo_Pale_Negativo_Imagen.png';
+import logoPale from '../../../../images/Logo_Pale_Negativo_Imagen.webp';
 import { faFacebookSquare,faWhatsappSquare, faYoutubeSquare} from "@fortawesome/free-brands-svg-icons";
 import { faHome, faMailBulk } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
