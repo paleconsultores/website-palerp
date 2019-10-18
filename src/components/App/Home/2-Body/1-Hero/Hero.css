@@ -54,7 +54,7 @@
   top: 0;
   left: 0;
   z-index: 0;
-  background-image: url('./images/hero-1200.jpg');
+  background-color:#FF4544;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: local;
@@ -64,13 +64,3 @@
   height: 100%;
  
 }
-@media screen and (max-width : 800px){
-  .hero-image{
-    background-image: url('./images/hero-800.jpg');
-  }
-} 
-@media screen and (max-width : 420px){
-  .hero-image{
-    background-image: url('./images/hero-400.jpg');
-  }
-} 

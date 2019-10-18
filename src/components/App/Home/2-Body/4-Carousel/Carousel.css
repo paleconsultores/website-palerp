@@ -1,16 +1,17 @@
 /*Carousel-Slider component*/
 .carousel-section{
+    display: grid;
     overflow-x: hidden;
     overflow-y: hidden;
+    grid-template: 1fr / minmax(100px, 1204px);
+    justify-content: center;
 }
 /*carousel-slider container*/
 .carousel-slider{
-    margin: auto;
+    box-sizing: border-box;
     overflow: hidden;
     position: relative;
     height: 38em;
-    max-width: 1200px;
-    width: 95%;
 }
 /*carousel-slider wrapped per image*/
 .carousel-slider-wrapper{
