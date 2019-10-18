@@ -1,9 +1,9 @@
 /*Carousel Card component*/
 .carousel-card{
   width: 100%;
-  display: flex;
-  flex: 1;
-  min-width: 1200px;
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+  min-width: 1200px; 
   border: 1px solid black;
   text-align:  center;
   background: #FFFFFF;
@@ -15,7 +15,7 @@
 }
 /*image of Carousel Card Component*/
 .carousel-card__image{
-  width: 50%;
+  width: 95%;
   height: 20em;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -37,7 +37,6 @@
     height: 36em;
   }
   .carousel-card__image{
-    width: 50%;
     height: 35vh;
   }
   .carousel-card__text{
@@ -48,7 +47,6 @@
 /*Media Query for a medium deskptop screen*/
 @media screen and (max-width: 1052px){
   .carousel-card__image{
-    width: 50%;
     height: 60%;
   }
   .carousel-card__text{
@@ -62,28 +60,27 @@
     height: 32em;
   }
   .carousel-card__image{
-    width: 50%;
     height: 70%;
   
   }
   .carousel-card__text{
-    height: 34.6vh;
     font-size: 1.6vw;
   }
 } 
 /*Media Query for a small device*/
 @media screen and (max-width: 480px){
   .carousel-card{
-    min-width: 93.9vw;
+    min-width: 98.9vw;
     height: 30em;
   }
   .carousel-card__image{
-    width: 45%;
-    height: 60%;
+    margin-left: 8px;
+    height: 18vh;
   }
   .carousel-card__text{
-    height: 60%;
+    height: 23vh;
     font-size: 2vw;
+    margin-bottom: 3px;
   }
 }
 

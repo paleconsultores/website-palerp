@@ -52,9 +52,8 @@
     transform: rotate(-45deg);
 }
 
-.burger-menu--open span:nth-child(4) {
+.burger-menu--open span:nth-child(4)  {
     top: 1.25rem;
     width: 0%;
     left: 50%;
 }
-
