@@ -3,15 +3,19 @@
   position: fixed;
   z-index: 3;
   width: 100%;
-  background: rgba(217, 36, 46, .8);
+  background: transparent;
   top: 0;
+  transition: .5s ease-in-out;
+}
+
+.header--positive {
+  background: white;
 }
 
 /* navbar element */
 .header__navbar {
   display: grid;
   grid-template: 1fr / repeat(2, minmax(100px, 600px));
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
   justify-content: center;
   padding: 1rem;
 }
@@ -39,6 +43,9 @@
   display: grid;
 }
 
+
+
+
 /* keyframes for Brand animation */
 @keyframes showBrand {
   from {
@@ -52,6 +59,10 @@
 }
 
 @media screen and (max-width: 1011px) {
+  .header {
+    background: rgba(0, 0, 0, 0.6);
+  }
+
   .header__navbar {
     grid-template: auto 1fr / repeat(2, minmax(100px, 600px));
   }
