@@ -16,8 +16,6 @@ export function Header() {
 
   useEffect(function () {
     function onScroll() {
-      const headerMenu = document.getElementsByClassName("header__menu");
-
       const changeBackground = window.scrollY > (window.innerHeight - 5.5 * remVal);
 
       if (shouldBgChange !== changeBackground) {

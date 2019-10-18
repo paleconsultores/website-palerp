@@ -5,6 +5,40 @@
   position: relative;
 }
 
+/* hero intro text element */
+.intro-text {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template: 100vh / minmax(100px, 900px);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.intro-text__container {
+  width: 90%;
+}
+
+.intro-text__paragraph {
+  margin: 0;
+  /*justify-self: center;*/
+  color: white;
+  font-size: 2rem;
+}
+
+/* hero background element */
+.hero-background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background: #ff4544;
+  transform: translate3d(0px, 0px, 0px) scale(1);
+  width: 100%;
+  height: 100%;
+}
+
 /* hexagon animation element */
 .hero__hex-animation {
   overflow: hidden;
@@ -14,15 +48,4 @@
   z-index: 2;
   left: 5%;
   top: 42%;
-}
-
-/* hero image element */
-.hero-image{
-  top: 0;
-  left: 0;
-  z-index: 0;
-  background: #ff4544;
-  transform: translate3d(0px, 0px, 0px) scale(1);
-  width: 100%;
-  height: 100%;
 }
