@@ -3,7 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 //Resources
-import DEFAULT_IMAGE from "./images/ayuda.jpg";
+import DEFAULT_IMAGE from "./images/ayuda.webp";
 import './CardService.css';
 
 export function CardService(

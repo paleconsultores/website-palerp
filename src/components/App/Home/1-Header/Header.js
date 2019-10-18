@@ -5,7 +5,6 @@ import React, { useState, useEffect } from 'react';
 import { BurgerMenu } from "./BurgerMenu";
 import { MenuList } from "./MenuList";
 
-
 import './Header.css'
 import logoPaleNegativo from '../../../../images/Logo_Pale_Negativo_Imagen.png';
 import logoPalePrincipal from '../../../../images/Logo_Pale_Principal_Imagen.png';
