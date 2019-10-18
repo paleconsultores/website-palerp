@@ -27,6 +27,7 @@ footer {
 
 .footer_servicios p{
   color: #808495;
+  font-size: 1rem;
 }
 
 .footer_info_subtitulos{
@@ -58,6 +59,7 @@ footer {
 }
 .footer_info p{
   color: #808495;
+  font-size: 1rem;
 }
 .logo_Footer {
     margin-block-start: 14.940px;
@@ -95,6 +97,16 @@ footer {
     grid-template: repeat(1, minmax(auto, 1fr)) / 1fr;
     
   }
+  .footer_info p{
+    color: #808495;
+    font-size: 1.5rem;
+  }
+  
+  .footer_info_subtitulos{
+  
+    font-size: 1.6rem;
+  
+  }
 } 
 
 @media screen and (max-width : 1024px){
@@ -112,8 +124,16 @@ footer {
     width: 6.25rem;
   }
   .logo_Footer {
-    
     width:6.375rem;
     height: 2.125rem; 
-}
+  }
+  .footer_info p{
+    color: #808495;
+    font-size: 1.5rem;
+  }
+  .footer_info h4 {
+    
+    font-size: 1.6rem;
+    
+  }
 } 
