@@ -3,7 +3,8 @@ import React from "react";
 import PropTypes from "prop-types";
 
 //Resources
-import DEFAULT_IMAGE from "../images/imagen1.jpg";
+import DEFAULT_IMAGE from "../images/informacion-800.jpg";
+import Responsive_Image from "../images/informacion-400.jpg"
 import './Image.css';
 
 export function Image(
@@ -17,13 +18,15 @@ export function Image(
     if(type===1){
         return(
             <div className="image">
-
-            <img
-                className="image__image"
-                src={imageUrl} alt={alt}/>
-                  
-          </div>
-
+                <picture>
+                    <source media="(max-width: 420px)" srcSet={Responsive_Image}></source>
+                    <img
+                    className="image__image"
+                    alt={alt}
+                    src={imageUrl}/>
+                </picture>
+            
+            </div>
             );
         }
     }

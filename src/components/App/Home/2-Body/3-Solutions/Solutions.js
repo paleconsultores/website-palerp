@@ -3,9 +3,15 @@ import React from "react";
 
 //Resources
 import { CardSolutions } from "./CardSolutions";
-import image1 from './CardSolutions/images/consulta.jpg';
-import developing from './CardSolutions/images/DesarrolloSoftware.png';
-import image2 from './CardSolutions/images/HardwareySoftware.png';
+
+import image1 from './CardSolutions/images/consulta-800.jpg';
+import developing from './CardSolutions/images/DesarrolloSoftware-800.jpg';
+import image2 from './CardSolutions/images/HardwareySoftware-800.jpg';
+
+import imgr1 from './CardSolutions/images/consulta-400.jpg';
+import imgr2 from './CardSolutions/images/DesarrolloSoftware-400.jpg';
+import imgr3 from './CardSolutions/images/HardwareySoftware-400.jpg';
+
 import './Solutions.css';
 
 export function Solutions() {
@@ -15,18 +21,22 @@ export function Solutions() {
       alt: 'Hardware y Software',
       title: 'Hardware y Software',
       imageUrl: image2,
+      responsiveimages : imgr3,
     },
     {
       type: 1,
       alt: 'Consultoria',
       title: 'Consultoría',
       imageUrl: image1,
+      responsiveimages : imgr1,
+      
     },
     {
       type: 1,
       alt: 'Desarrollo de Software',
       title: 'Desarrollo de Software',
       imageUrl: developing,
+      responsiveimages : imgr2,
     },
   ];
 
@@ -44,6 +54,7 @@ export function Solutions() {
             alt = {solution.alt}
             title = {solution.title}
             imageUrl={solution.imageUrl}
+            responsiveimages= {solution.responsiveimages}
           />
         )}
       </div>
