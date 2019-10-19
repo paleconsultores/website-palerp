@@ -23,7 +23,7 @@ export function Hero() {
       </div>
       <div className="intro-text">
         <div className="intro-text__container">
-          <p className="intro-text__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium amet autem consequatur cum dolore eius error et eveniet libero nisi porro quasi saepe sequi, tempora temporibus veniam vero. Perferendis, qui!</p>
+          <p className="intro-text__paragraph">Somos una fábrica de software que desarrolla soluciones a medida, teniendo como prioridad la satisfacción del usuario final.</p>
           Hola: <TypedText />
         </div>
       </div>

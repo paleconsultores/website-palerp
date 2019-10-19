@@ -1,0 +1,16 @@
+.messageSecond {
+    background:#FF4544;
+    display: grid;
+    justify-content: center;
+    grid-template: 1fr / minmax(100px,1200px);
+    color: white;
+  }
+  
+  .messageSecond__paragraph {
+    padding: 1.5em 3rem; /* mezclando em y rem */
+    margin: 0;
+    font-size:3rem;
+    text-align: center;
+    font-family:'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,  'Helvetica Neue', sans-serif;
+    font-weight: bold;
+  }

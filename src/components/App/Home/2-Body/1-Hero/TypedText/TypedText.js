@@ -5,7 +5,7 @@ import React, { useEffect } from "react";
 import './TypedText.css';
 
 export function TypedText() {
-  let txt = 'Lorem ipsum dummy text blabla.';
+  let txt = 'Bienvenidos a Pale Consultores';
   let i = 0;
   let speed = 50;
   let isFinished = false;

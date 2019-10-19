@@ -9,6 +9,7 @@ import { Carousel } from './4-Carousel';
 import { Services } from './5-Services';
 import { ClientList } from './6-ClientList';
 import { Message } from './7-Message';
+import {MessageSecond} from './9-MessageSecond';
 import { MoreInformation } from './8-MoreInformation';
 
   // Styles
@@ -30,9 +31,9 @@ export class Body extends React.Component {
         <Information/>
         <Solutions/>
         <section>
-          <Message>
+          <MessageSecond>
             Conoce mas sobre nuestro trabajo
-          </Message>
+          </MessageSecond>
         </section>
         <Carousel/>
         <Services/>
