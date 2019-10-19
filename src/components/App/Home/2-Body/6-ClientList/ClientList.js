@@ -24,10 +24,6 @@ export function ClientList() {
       image: image1,
     },
     {
-      alt: "Grifo el Imperio",
-      image: image2,
-    },
-    {
       alt: "Grifo Gabriel",
       image: image3,
     },
@@ -39,10 +35,7 @@ export function ClientList() {
       alt: "Grifo Manu",
       image: image5,
     },
-    {
-      alt: "Pale Consultores",
-      image: image6,
-    },
+   
     {
       alt: "Distribuciones San Andres",
       image: image7,
@@ -55,14 +48,7 @@ export function ClientList() {
       alt: "Grifo Virgen Natividad",
       image: image9,
     },
-    {
-      alt: "Grifo Rural Alianza",
-      image: image10,
-    },
-    {
-      alt: "Importaciones Gary",
-      image: image11,
-    },
+
     {
       alt: "Servicentro Pavel",
       image: image12,

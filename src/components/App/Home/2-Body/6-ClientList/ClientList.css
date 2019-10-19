@@ -3,7 +3,7 @@
   display: grid;
   grid-template: 1fr / minmax(100px, 1200px);
   justify-content: center;
-  padding: 5em 2.5rem;
+  padding: 6.5em 2.5rem;
 }
 
 .client-list__title {
@@ -19,4 +19,17 @@
   overflow: scroll; */
   width: 90%;
   justify-self: center;
+  display: grid;
+  grid-template: 1fr / minmax(100px, 1200px);
+  justify-content: center;
+  padding: 6.5em 2.5rem;
+}
+
+@media screen and (max-width : 900px){
+  .client-list-cards {
+  
+    grid-template: repeat(1,auto)/ repeat(1, 200px 200px);
+
+  }
+  
 }

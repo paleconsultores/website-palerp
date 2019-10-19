@@ -12,7 +12,7 @@ export function Information(){
     {
       type: 1,
       title: 'Quienes somos',
-      description: "Somos una empresa de consultoría y desarrollo de software, dedicada a brindar soluciones a empresas en distintos rubros. Nuestra visión es de mejora continua, trabajamos constantemente para crecer con usted y ofrecerle siempre los mejores avances en cuanto a tecnología, en software nuestras soluciones combinan una operatoria ágil, sencilla y segura con el mayor control de información sobre su negocio, en cuanto a hardware trabajamos con equipos tecnológicos de alto nivel y garantía,las cuales son herramientas que potenciaran su negocio.",
+      description: "Somos una empresa que combina la experiencia con agilidad e innovación, creemos en el talento de nuestros colaboradores, por eso fomentamos una cultura de mejora continua, premiamos el esfuerzo, la generación de ideas nuevas y creativas para la resolución de problemas. "
     }
   ];
   const _images=[
