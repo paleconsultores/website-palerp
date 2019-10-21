@@ -9,8 +9,6 @@
   background: #FFFFFF;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.60);
   border-radius: 8px 8px 8px 8px;
-  align-content: center;
-  align-items: center;
   margin-top: 20px;
 }
 /*image of Carousel Card Component*/
@@ -26,7 +24,6 @@
 .carousel-card__text{
   background: #FF4544;
   height: 20em;
-  align-items: center;
   margin-top: 1px;
   font-weight: bold;
   color: white;
@@ -36,13 +33,13 @@
 
 }
 .carousel-card__text-tittle{
-  font-size: 1.3rem;
+  font-size:  2rem;
   text-align: center;
 }
 .carousel-card__text-text{
-  text-align: justify;
- 
+  text-align: initial;
 }
+
 
 
 @media screen and (max-width: 1200px){

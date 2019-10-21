@@ -17,7 +17,7 @@ export function CarouselCard ({property}) {
                 <p className="carousel-card__text-text">
                     {text}
                 </p>
-                <ul >
+                <ul className="carousel-card__text-text">
                     <li>{d1}</li>
                     <li>{d2}</li>
                     <li>{d3}</li>
