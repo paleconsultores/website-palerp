@@ -14,13 +14,13 @@ export function CardSolutions(
       descripcion='lorem a',
       imageUrl = DEFAULT_IMAGE,
       responsiveimages = DEFAULT_IMAGE_RESP,
+      text = "ipsum",
       alt = "image alternate text", 
     }) 
   {
     if (type === 1) {
       return (
-        <div className="card-solutions">
-  
+      <div className="card-solutions">
        <div className="card-solutions__sectionName">
         <picture>
           <source media="(max-width: 420px)" srcSet={responsiveimages}/>
@@ -30,7 +30,11 @@ export function CardSolutions(
         </picture>
      
        </div>
-      
+        <div className = "card-solutions__text-hover">
+          <div >{text}</div>
+        </div>
+       
+
        <div className="card-solutions__seccionInfo">
              <p>{title} <span>{descripcion}</span> </p>
              
@@ -47,6 +51,7 @@ export function CardSolutions(
   CardSolutions.propTypes = {
     type: PropTypes.number,
     serviceClass: PropTypes.string,
+    text : PropTypes.string,
     title: PropTypes.string,
     descripcion:PropTypes.string,
     image: PropTypes.string,
