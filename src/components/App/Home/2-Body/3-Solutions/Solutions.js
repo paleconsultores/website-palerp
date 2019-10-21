@@ -19,7 +19,8 @@ export function Solutions() {
     {
       type: 1,
       alt: 'Hardware y Software',
-      title: 'Hardware y Software',
+      title: 'Implementación Integral',
+      descripcion:'de Hardware y Software',
       imageUrl: image2,
       responsiveimages : imgr3,
       text:"Lorem ipsum dolor sit amet consectetur adipiscing elit malesuada laoreet vitae sociosqu, lobortis ultrices potenti vivamus etiam metus mus lacinia aenean inceptos"
@@ -28,6 +29,7 @@ export function Solutions() {
       type: 1,
       alt: 'Consultoria',
       title: 'Consultoría',
+      descripcion:'en soluciones de  software',
       imageUrl: image1,
       responsiveimages : imgr1,
       text:'cubilia non mauris vehicula turpis nascetur ac ultricies leo pellentesque. Blandit vulputate curae dui gravida nec eleifend a hendrerit pretium'
@@ -36,6 +38,7 @@ export function Solutions() {
       type: 1,
       alt: 'Desarrollo de Software',
       title: 'Desarrollo de Software',
+      descripcion:'a medida',
       imageUrl: developing,
       responsiveimages : imgr2,
       text:"vel cursus class a, inceptos dui imperdiet platea ut lobortis bibendum, cum euismod feugiat tortor justo consequat."
@@ -45,8 +48,8 @@ export function Solutions() {
   return (
     <section id="Solutions" className="solutions">
       <div className="solutions_title">
-        <h1 className="title title--x-medium title--red">Nuestras</h1>
-        <h1 className="title title--large title--green">Soluciones</h1>
+        {/* <h1 className="title title--x-medium title--red">Nuestras</h1> */}
+        <h1 className="title title--large title--green">SERVICIOS</h1>
       </div>
       <div className="solutions__info">
         {_cardsSolutions.map((solution) =>
@@ -56,6 +59,7 @@ export function Solutions() {
             alt = {solution.alt}
             title = {solution.title}
             text = {solution.text}
+            descripcion={solution.descripcion}
             imageUrl={solution.imageUrl}
             responsiveimages= {solution.responsiveimages}
           />

@@ -10,7 +10,8 @@ import './CardSolutions.css';
 export function CardSolutions(
     { 
       type = 1,
-      title = 'lorem', 
+      title = 'lorem',
+      descripcion='lorem a',
       imageUrl = DEFAULT_IMAGE,
       responsiveimages = DEFAULT_IMAGE_RESP,
       text = "ipsum",
@@ -35,14 +36,14 @@ export function CardSolutions(
        
 
        <div className="card-solutions__seccionInfo">
-             <h2>{title}</h2>
+             <p>{title} <span>{descripcion}</span> </p>
              
        </div>
 
-       <div className="card-solutions__seccionFooter">
+       {/* <div className="card-solutions__seccionFooter">
            <button className="sizeButton">Saber mas</button>
-       </div>
-      </div>
+       </div> */}
+     </div>
       );
     }
   }
@@ -52,6 +53,7 @@ export function CardSolutions(
     serviceClass: PropTypes.string,
     text : PropTypes.string,
     title: PropTypes.string,
+    descripcion:PropTypes.string,
     image: PropTypes.string,
     imagerespURL: PropTypes.string
   }

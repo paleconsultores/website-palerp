@@ -15,7 +15,26 @@
 .solutions_title{
   padding-bottom: 30px;
   padding-top: 30px;
+  
 }
+
+.solutionsSecond {
+  background:#69B4CA;
+  display: grid;
+  justify-content: center;
+  grid-template: 1fr / minmax(100px,1200px);
+  color: white;
+}
+
+.solutionsSecond__paragraph {
+  padding: 1.5em 3rem; /* mezclando em y rem */
+  margin: 0;
+  font-size:3rem;
+  text-align: center;
+  font-family:'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,  'Helvetica Neue', sans-serif;
+  font-weight: bold;
+}
+
 @media screen and (max-width : 900px){
   .solutions__info {
     grid-template: repeat(1, minmax(200px, 1fr)) / 1fr;
