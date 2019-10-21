@@ -31,7 +31,7 @@ export function CardSolutions(
      
        </div>
         <div className = "card-solutions__text-hover">
-          <div >{text}</div>
+          <div className="card-solutions__text">{text}</div>
         </div>
        
 

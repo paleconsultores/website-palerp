@@ -23,7 +23,7 @@ export function Solutions() {
       descripcion:'de Hardware y Software',
       imageUrl: image2,
       responsiveimages : imgr3,
-      text:"Lorem ipsum dolor sit amet consectetur adipiscing elit malesuada laoreet vitae sociosqu, lobortis ultrices potenti vivamus etiam metus mus lacinia aenean inceptos"
+      text:"Contamos y trabajamos con tecnología de vanguardia para nuestros sistemas de gestion y nuestros productos tecnológicos."
     },
     {
       type: 1,
@@ -32,7 +32,7 @@ export function Solutions() {
       descripcion:'en soluciones de  software',
       imageUrl: image1,
       responsiveimages : imgr1,
-      text:'cubilia non mauris vehicula turpis nascetur ac ultricies leo pellentesque. Blandit vulputate curae dui gravida nec eleifend a hendrerit pretium'
+      text:'Brindamos asesoría informática, de manera que se realizar un estudio del sistema de manejo de información de su empresa.'
     },
     {
       type: 1,
@@ -41,7 +41,7 @@ export function Solutions() {
       descripcion:'a medida',
       imageUrl: developing,
       responsiveimages : imgr2,
-      text:"vel cursus class a, inceptos dui imperdiet platea ut lobortis bibendum, cum euismod feugiat tortor justo consequat."
+      text:"Desarrollamos software a tu medida, brindamos soluciones a las empresas en distintos rubros."
     },
   ];
 
