@@ -1,6 +1,6 @@
 .services {
   display: grid;
-  grid-template: auto 1fr / minmax(200px, 1200px);
+  grid-template: auto 1fr / minmax(100px, 1200px);
   justify-content: center;
 }
 .services__title{

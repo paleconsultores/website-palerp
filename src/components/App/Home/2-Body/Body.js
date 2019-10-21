@@ -11,10 +11,17 @@ import { ClientList } from './6-ClientList';
 import { Message } from './7-Message';
 import {MessageSecond} from './9-MessageSecond';
 import { MoreInformation } from './8-MoreInformation';
+import {ContactUs} from "./ContactUs";
 
-  // Styles
+
+// Styles
 import './Body.css';
 
+
+function submitBody(e) {
+  e.preventDefault();
+  console.log("submit from Body");
+}
 
 export class Body extends React.Component {
   render() {
@@ -38,6 +45,7 @@ export class Body extends React.Component {
         <Carousel/>
         <Services/>
         <ClientList/>
+        <ContactUs/>
         {/* <MoreInformation/> */}
       </div>
     );
