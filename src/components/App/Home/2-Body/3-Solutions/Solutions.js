@@ -43,8 +43,8 @@ export function Solutions() {
   return (
     <section id="Solutions" className="solutions">
       <div className="solutions_title">
-        <h1 className="title title--x-medium title--red">Nuestras</h1>
-        <h1 className="title title--large title--green">Soluciones</h1>
+        {/* <h1 className="title title--x-medium title--red">Nuestras</h1> */}
+        <h1 className="title title--large title--green">SERVICIOS</h1>
       </div>
       <div className="solutions__info">
         {_cardsSolutions.map((solution) =>
