@@ -38,7 +38,7 @@ export function Services() {
       type: 1,
       alt: 'support',
       title: 'Soporte',
-      description: 'Resolvemos tus dudas, brindandote soporte 15/6, con respuestas inmediatas y tu operacion este asegurada',
+      description: 'Resolvemos tus dudas, brindandote soporte 15/6h, con respuestas inmediatas y tu operación este asegurada',
       imageUrl:soporte,
       responsiveImages:soporteresp
     },
@@ -46,7 +46,7 @@ export function Services() {
       type: 2,
       alt: 'sales',
       title: 'Ventas',
-      description: 'Resolvemos tus dudas, brindandote soporte 15/6, con respuestas inmediatas y tu operacion este asegurada',
+      description: 'Nos encargamos de brindarte información de los sistemas que la empresa ofrece,nuestro equipo de ventas realiza visita a los clientes interesados,llevando demos de nuestros productos y servicios,para que el cliente tenga una mejor experiencia de usuario.',
       imageUrl:ventas,
       responsiveImages:ventasresp
     }

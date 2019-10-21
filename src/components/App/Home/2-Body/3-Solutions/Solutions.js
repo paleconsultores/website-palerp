@@ -19,7 +19,8 @@ export function Solutions() {
     {
       type: 1,
       alt: 'Hardware y Software',
-      title: 'Hardware y Software',
+      title: 'Implementación Integral',
+      descripcion:'de Hardware y Software',
       imageUrl: image2,
       responsiveimages : imgr3,
     },
@@ -27,6 +28,7 @@ export function Solutions() {
       type: 1,
       alt: 'Consultoria',
       title: 'Consultoría',
+      descripcion:'en soluciones de  software',
       imageUrl: image1,
       responsiveimages : imgr1,
       
@@ -35,6 +37,7 @@ export function Solutions() {
       type: 1,
       alt: 'Desarrollo de Software',
       title: 'Desarrollo de Software',
+      descripcion:'a medida',
       imageUrl: developing,
       responsiveimages : imgr2,
     },
@@ -53,6 +56,7 @@ export function Solutions() {
             type = {solution.type}
             alt = {solution.alt}
             title = {solution.title}
+            descripcion={solution.descripcion}
             imageUrl={solution.imageUrl}
             responsiveimages= {solution.responsiveimages}
           />

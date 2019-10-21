@@ -32,7 +32,7 @@ export class Body extends React.Component {
         <Solutions/>
         <section>
           <MessageSecond>
-            Conoce mas sobre nuestro trabajo
+            Productos
           </MessageSecond>
         </section>
         <Carousel/>
