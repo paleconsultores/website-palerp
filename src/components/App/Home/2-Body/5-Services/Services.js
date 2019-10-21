@@ -46,7 +46,7 @@ export function Services() {
       type: 2,
       alt: 'sales',
       title: 'Ventas',
-      description: 'Nos encargamos de brindarte información de los sistemas que la empresa ofrece,nuestro equipo de ventas realiza visita a los clientes interesados,llevando demos de nuestros productos y servicios,para que el cliente tenga una mejor experiencia de usuario.',
+      description: 'Nos encargamos de brindarte información de nuestros productos,nuestro equipo de ventas realizan visitas a los clientes interesados,llevando demos de los productos.',
       imageUrl:ventas,
       responsiveImages:ventasresp
     }
