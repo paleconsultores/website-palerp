@@ -1,14 +1,31 @@
 .card-solutions{
-    /* padding: 0.5rem 0; */
     padding: 0.63rem;
     background: #FFFFFF;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.60);
     border-radius: 8px 8px 8px 8px;
     overflow: hidden;
+    position: relative;
     align-content: center;
     align-items: center;
-    /* border:#707070 10px solid; */
 }
+.card-solutions__text-hover{
+    position:absolute;
+    height: 100%;
+    background-color: white;
+    top:0;
+    left:0;
+    opacity: 0;
+    padding:10px;
+    margin:0;
+  }
+.card-solutions:hover .card-solutions__text-hover{
+    opacity: 1;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    -ms-transition: opacity 500ms;
+    transition: opacity 500ms;
+  }
 
 .card-solutions__sectionName{
     display: flex;
@@ -16,7 +33,6 @@
     align-items: center;
     padding: 1rem 0;
 }
-
 .card-solutions__image {
     margin-right: 1rem;
     width: 100%;

@@ -22,6 +22,7 @@ export function Solutions() {
       title: 'Hardware y Software',
       imageUrl: image2,
       responsiveimages : imgr3,
+      text:"Lorem ipsum dolor sit amet consectetur adipiscing elit malesuada laoreet vitae sociosqu, lobortis ultrices potenti vivamus etiam metus mus lacinia aenean inceptos"
     },
     {
       type: 1,
@@ -29,7 +30,7 @@ export function Solutions() {
       title: 'Consultoría',
       imageUrl: image1,
       responsiveimages : imgr1,
-      
+      text:'cubilia non mauris vehicula turpis nascetur ac ultricies leo pellentesque. Blandit vulputate curae dui gravida nec eleifend a hendrerit pretium'
     },
     {
       type: 1,
@@ -37,6 +38,7 @@ export function Solutions() {
       title: 'Desarrollo de Software',
       imageUrl: developing,
       responsiveimages : imgr2,
+      text:"vel cursus class a, inceptos dui imperdiet platea ut lobortis bibendum, cum euismod feugiat tortor justo consequat."
     },
   ];
 
@@ -53,6 +55,7 @@ export function Solutions() {
             type = {solution.type}
             alt = {solution.alt}
             title = {solution.title}
+            text = {solution.text}
             imageUrl={solution.imageUrl}
             responsiveimages= {solution.responsiveimages}
           />
