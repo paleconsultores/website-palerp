@@ -19,24 +19,29 @@ export function Solutions() {
     {
       type: 1,
       alt: 'Hardware y Software',
-      title: 'Hardware y Software',
+      title: 'Implementación Integral',
+      descripcion:'de Hardware y Software',
       imageUrl: image2,
       responsiveimages : imgr3,
+      text:"Contamos y trabajamos con tecnología de vanguardia para nuestros sistemas de gestion y nuestros productos tecnológicos."
     },
     {
       type: 1,
       alt: 'Consultoria',
       title: 'Consultoría',
+      descripcion:'en soluciones de  software',
       imageUrl: image1,
       responsiveimages : imgr1,
-      
+      text:'Brindamos asesoría informática, de manera que se realizar un estudio del sistema de manejo de información de su empresa.'
     },
     {
       type: 1,
       alt: 'Desarrollo de Software',
       title: 'Desarrollo de Software',
+      descripcion:'a medida',
       imageUrl: developing,
       responsiveimages : imgr2,
+      text:"Desarrollamos software a tu medida, brindamos soluciones a las empresas en distintos rubros."
     },
   ];
 
@@ -53,6 +58,8 @@ export function Solutions() {
             type = {solution.type}
             alt = {solution.alt}
             title = {solution.title}
+            text = {solution.text}
+            descripcion={solution.descripcion}
             imageUrl={solution.imageUrl}
             responsiveimages= {solution.responsiveimages}
           />
