@@ -23,12 +23,12 @@ export class Body extends React.Component {
         <section id="Hero">
             <Hero />
         </section>
-        <section>
-          <Message>
+        {/* <section>
+           <Message>
             Somos una empresa de consultoría y desarrollo de software,dedicada a brindar soluciones a empresas en distintos rubros
-          </Message>
-        </section>
-        <Information/>
+          </Message> 
+        </section> */}
+        {/* <Information/> */}
         <Solutions/>
         <section>
           <MessageSecond>
@@ -38,7 +38,7 @@ export class Body extends React.Component {
         <Carousel/>
         <Services/>
         <ClientList/>
-        <MoreInformation/>
+        {/* <MoreInformation/> */}
       </div>
     );
   }
