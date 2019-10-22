@@ -4,13 +4,13 @@ import React from "react";
 //Resources
 import { CardService } from "./CardService";
 import capacitacion from "./CardService/images/capacitaciones-800.jpg";
-import soporte from "./CardService/images/soporteHardware-800.jpg";
-import desarrollo from "./CardService/images/Entornodigital-800.jpg";
+import soporte from "./CardService/images/hardware.jpg";
+import desarrollo from "./CardService/images/equipoDesarrollo-800.jpg";
 import ventas from "./CardService/images/ventas-800.jpg";
 
 import capacitacionresp from "./CardService/images/capacitaciones-400.jpg";
-import soporteresp from "./CardService/images/soporteHardware-400.jpg";
-import desarrolloresp from "./CardService/images/Entornodigital-400.jpg";
+import soporteresp from "./CardService/images/hardware-400.jpg";
+import desarrolloresp from "./CardService/images/desarrollo-400.jpg";
 import ventasresp from "./CardService/images/ventas-400.jpg";
 
 

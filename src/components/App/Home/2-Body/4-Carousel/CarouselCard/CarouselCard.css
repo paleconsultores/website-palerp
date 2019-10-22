@@ -40,6 +40,10 @@
   text-align: initial;
 }
 
+.carousel-card__text-text-a {
+  color: #FFFFFF;
+  text-align: center;
+}
 
 
 @media screen and (max-width: 1200px){
