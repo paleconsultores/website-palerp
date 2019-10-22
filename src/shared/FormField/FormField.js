@@ -8,19 +8,20 @@ import './FormField.css';
 export function FormField({
                             formType="input",
                             type="text",
-                            name="input"
+                            name="input",
+                            content = name,
+                            value = '',
+                            handleChange
                           }) {
 
   function selector() {
     switch (formType) {
       case "input":
-        return <input className="form-control" type={type} name={name} placeholder={"Tu " + name}/>
-        break;
+        return <input className="form-control" type={type} name={name} placeholder={"Tu " + content} onChange={handleChange} value={value}/>;
       case "textarea":
-        return <textarea className="form-control" rows={3} name={name} placeholder={"Tu " + name}/>
-        break;
+        return <textarea className="form-control" rows={3} name={name} placeholder={"Tu " + content} onChange={handleChange} value={value}/>;
       case "button":
-        return <button className="button" type="submit">{name}</button>
+        return <button className="button button--blue" type="submit">{content}</button>
     }
   }
 
