@@ -32,7 +32,8 @@ export const data = {
             "d2":" Mejores control contable y logístico.",
             "d3":"Fácil de usar.",
             "d4":"Minimiza el riesgo de facturas erradas.",
-            "d5":"Ayuda a proteger el medio ambiente."
+            "d5":"Ayuda a proteger el medio ambiente.",
+            "link":"http://ifacturacion.pe/"
 
         }
     ]

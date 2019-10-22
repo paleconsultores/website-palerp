@@ -18,13 +18,14 @@ export function Hero() {
   });
 
   return(
-    <section className="hero" >
+    <section id="Hero"className="hero" >
       <div className="hero__content">
       </div>
       <div className="intro-text">
         <div className="intro-text__container">
+          <TypedText /> 
           <p className="intro-text__paragraph">Somos una fábrica de software que desarrolla soluciones a medida, teniendo como prioridad la satisfacción del usuario final.</p>
-          Hola: <TypedText />
+       
         </div>
       </div>
       <div className="hero-background">

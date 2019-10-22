@@ -1,13 +1,15 @@
 .intro-text__typed {
   margin: 0;
   color: white;
-  font-size: 1.7rem;
+  font-size: 2.3rem;
+  padding: 20px;
+  
 }
 
 @media screen and (max-width : 900px){
   .intro-text__typed {
     margin: 0;
     color: white;
-    font-size:2.2rem;
+    font-size:2.5rem;
   }
 }

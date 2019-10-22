@@ -10,6 +10,7 @@
 
 .header--positive {
   background: white;
+  box-shadow: 9px 9px 9px 0 rgba(47, 44, 44, 0.2);
 }
 
 /* navbar element */

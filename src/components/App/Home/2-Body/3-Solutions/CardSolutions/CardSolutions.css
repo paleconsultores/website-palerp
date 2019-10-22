@@ -43,7 +43,9 @@
     font-size: 1.8rem;
     color: #808495;
     font-weight: bold;
-    text-align: center;
+    text-align: initial;
+    margin-block-start: 30px;
+    padding: 15px;
  
  }
 .card-solutions__seccionInfo p{
@@ -80,4 +82,17 @@
       text-align: center;
       background: transparent;
       border:#4B75B8 5px solid;
+}
+
+@media screen and (max-width:900px){
+    .card-solutions__text{ 
+        font-size: 2.5rem;
+        text-align: initial;
+     }
+     .card-solutions__seccionInfo p{
+        font-size: 2rem;
+     }
+     .card-solutions__seccionInfo span{
+        font-size: 2rem;
+     }
 }

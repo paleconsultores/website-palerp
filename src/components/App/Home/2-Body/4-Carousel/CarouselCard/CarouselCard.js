@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 import './CarouselCard.css'
 
 export function CarouselCard ({property}) {
-    const {index, picture, title, text , responsivepicture,d1,d2,d3,d4,d5} = property;
+    const {index, picture, title, text , responsivepicture,d1,d2,d3,d4,d5,link} = property;
     return (
         <div id={`card-${index}`} className="carousel-card">
             <picture className="carousel-picture">
@@ -17,13 +17,15 @@ export function CarouselCard ({property}) {
                 <p className="carousel-card__text-text">
                     {text}
                 </p>
-                <ul >
+                <ul className="carousel-card__text-text">
                     <li>{d1}</li>
                     <li>{d2}</li>
                     <li>{d3}</li>
                     <li>{d4}</li>
                     <li>{d5}</li>
                 </ul>
+                <a  className="carousel-card__text-text-a" href={link} target="_blank" >Click aquí</a>
+               
             </div>
         </div>
     )
