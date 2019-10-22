@@ -53,7 +53,7 @@ export class Carousel extends React.Component {
     render() {
         const { properties, property } = this.state;
         return (
-            <section className="carousel-section" >
+            <section id="Carousel" className="carousel-section" >
                 {/*get the index of the item from the carousel data properties*/}
                 <div className={`carousel-slider active-slide-${property.index}`}>
                     {/*calculate where in the wrapper is the next card */}
