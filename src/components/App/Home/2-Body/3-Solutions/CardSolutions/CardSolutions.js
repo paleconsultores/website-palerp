@@ -40,9 +40,9 @@ export function CardSolutions(
              
        </div>
 
-       {/* <div className="card-solutions__seccionFooter">
+       <div className="card-solutions__seccionFooter">
            <button className="sizeButton">Saber mas</button>
-       </div> */}
+       </div>
      </div>
       );
     }
