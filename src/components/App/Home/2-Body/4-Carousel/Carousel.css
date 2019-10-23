@@ -1,5 +1,10 @@
+/* Carousel section */
+.carousel {
+    padding-top: 5.5rem;
+}
+
 /*Carousel-Slider component*/
-.carousel-section{
+.carousel__slider{
     display: grid;
     overflow-x: hidden;
     overflow-y: hidden;

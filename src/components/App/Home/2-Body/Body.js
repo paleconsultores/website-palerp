@@ -9,8 +9,8 @@ import { Carousel } from './4-Carousel';
 import { Services } from './5-Services';
 import { ClientList } from './6-ClientList';
 import { Message } from './7-Message';
-import {MessageSecond} from './9-MessageSecond';
 import { MoreInformation } from './8-MoreInformation';
+import {MessageSecond} from './9-MessageSecond';
 import {ContactUs} from "./ContactUs";
 
 
@@ -30,23 +30,11 @@ export class Body extends React.Component {
         <section id="Hero">
             <Hero />
         </section>
-        {/* <section>
-           <Message>
-            Somos una empresa de consultoría y desarrollo de software,dedicada a brindar soluciones a empresas en distintos rubros
-          </Message> 
-        </section> */}
-        {/* <Information/> */}
         <Solutions/>
-        <section>
-          <MessageSecond>
-            Productos
-          </MessageSecond>
-        </section>
         <Carousel/>
         <Services/>
         <ClientList/>
         <ContactUs/>
-        {/* <MoreInformation/> */}
       </div>
     );
   }
