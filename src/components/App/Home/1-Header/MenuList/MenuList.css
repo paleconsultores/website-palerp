@@ -59,13 +59,23 @@
 }
 
 
+@media screen and (max-width: 1066px) {
+  .menu-list {
+    grid-template: 1fr / repeat(4, minmax( auto, 200px));
+  }
+
+  .menu-list li:first-child {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 1011px) {
   .header--positive .menu-list li a{
     color: white;
   }
 
   .menu-list {
-    grid-template: repeat(5, minmax(50px, 1fr)) / 1fr;
+    grid-template: repeat(4, minmax(50px, 1fr)) / 1fr;
     display: none;
     justify-items: normal;
   }

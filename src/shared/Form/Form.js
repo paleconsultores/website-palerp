@@ -6,13 +6,12 @@ import PropTypes from "prop-types";
 import { FormField } from "../FormField";
 import './Form.css';
 
-
-
-
-export function Form({
-                       method='GET',
-                       onSubmit
-                    }) {
+export function Form(
+  {
+    method='GET',
+    onSubmit
+  })
+{
   var [name, setName] = useState('');
   var [email, setEmail] = useState('');
   var [message, setMessage] = useState('');

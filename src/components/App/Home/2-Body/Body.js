@@ -12,24 +12,18 @@ import { Message } from './7-Message';
 import { MoreInformation } from './8-MoreInformation';
 import {MessageSecond} from './9-MessageSecond';
 import {ContactUs} from "./ContactUs";
+import {AboutUs} from "./AboutUs";
 
 
 // Styles
 import './Body.css';
 
-
-function submitBody(e) {
-  e.preventDefault();
-  console.log("submit from Body");
-}
-
 export class Body extends React.Component {
   render() {
     return(
       <div className="container">
-        <section id="Hero">
-            <Hero />
-        </section>
+        <Hero />
+        <AboutUs/>
         <Solutions/>
         <Carousel/>
         <Services/>
