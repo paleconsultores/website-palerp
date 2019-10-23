@@ -12,7 +12,7 @@ export const Footer = () => {
   return(
     <footer>
 
-      <div className="footer_info">
+      < div className="footer_info">
         <div>
           <img className="logo_Footer" src={logoPale} alt="logo_footer"></img>
           <hr/>
