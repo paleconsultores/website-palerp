@@ -1,0 +1,12 @@
+.form {
+  display: grid;
+  grid-template: 1fr auto auto / repeat(2, 1fr);
+  width: 90%;
+  justify-self: center;
+}
+
+@media screen and (max-width: 799px) {
+  .form {
+    grid-template: repeat(2, 1fr) repeat(2, auto) / 1fr;
+  }
+}
