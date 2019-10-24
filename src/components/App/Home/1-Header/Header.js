@@ -1,7 +1,7 @@
-//Dependencies
+// Dependencies
 import React, { useState, useEffect } from 'react';
 
-//Resources
+// Resources
 import { BurgerMenu } from "./BurgerMenu";
 import { MenuList } from "./MenuList";
 
@@ -10,10 +10,14 @@ import logoPaleNegativo from '../../../../images/Logo_Pale_Negativo_Imagen.png';
 import logoPalePrincipal from '../../../../images/Logo_Pale_Principal_Imagen.png';
 
 export function Header() {
-  const remVal = parseFloat(getComputedStyle(document.documentElement).fontSize)
 
+  // Get the rem unit value in pixels
+  const remVal = parseFloat(getComputedStyle(document.documentElement).fontSize);
+
+  // Boolean state to change the styles of the navigation bar
   const [shouldBgChange, setShouldBgChanged] = useState(false);
 
+  // Effect to check if the navigation bar should change styles
   useEffect(function () {
     function onScroll() {
       const changeBackground = window.scrollY > (window.innerHeight - 5.5 * remVal);
@@ -22,7 +26,6 @@ export function Header() {
         setShouldBgChanged(changeBackground);
       }
     }
-
     document.addEventListener("scroll", onScroll)
   });
 
