@@ -18,18 +18,17 @@ import {AboutUs} from "./AboutUs";
 // Styles
 import './Body.css';
 
-export class Body extends React.Component {
-  render() {
-    return(
-      <div className="container">
-        <Hero />
-        <AboutUs/>
-        <Solutions/>
-        <Carousel/>
-        <Services/>
-        <ClientList/>
-        {/* <ContactUs/> */}
-      </div>
-    );
-  }
+export function Body() {
+  return(
+    <div className="container">
+      <Hero />
+      {/* <AboutUs/> */}
+      <Solutions/>
+      <Carousel/>
+      <Services/>
+      <ClientList/>
+      {/* <ContactUs/> */}
+    </div>
+  );
+
 }

@@ -6,7 +6,7 @@ import './BurgerMenu.css';
 
 export function BurgerMenu() {
 
-  // function to add and remove classes when you click on the burger menu
+  // function to add and remove classes when you click the burger menu
   function CollapseBurgerMenu() {
     const burgerMenu = document.getElementsByClassName("burger-menu");
     const menuList = document.getElementsByClassName("header__menu");

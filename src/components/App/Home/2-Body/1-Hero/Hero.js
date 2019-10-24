@@ -9,8 +9,10 @@ import redhexs from './images/red7s.png';
 import './Hero.css';
 
 export function Hero() {
+  // Integer state to make Hexagons rotate
   const [count, setCount] = useState(0);
 
+  // Effect to increase count
   useEffect(function () {
     setTimeout(() => {
       setCount(count + .150);
