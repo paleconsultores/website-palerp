@@ -28,7 +28,7 @@ export class Body extends React.Component {
         <Carousel/>
         <Services/>
         <ClientList/>
-        <ContactUs/>
+        {/* <ContactUs/> */}
       </div>
     );
   }
