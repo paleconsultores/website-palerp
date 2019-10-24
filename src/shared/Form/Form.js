@@ -4,25 +4,27 @@ import PropTypes from "prop-types";
 
 // Resources
 import { FormField } from "../FormField";
+import api from "../../api";
+
 import './Form.css';
 
 export function Form(
   {
     method='GET',
-    onSubmit
+    Submit
   })
 {
   var [name, setName] = useState('');
   var [email, setEmail] = useState('');
   var [message, setMessage] = useState('');
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
-
+    const response = await api.usuario.enviarCorreoVentas({"nombre": name, "correo": email, "mensaje": message});
+    console.log(response);
     setName('');
     setEmail('');
     setMessage('');
-
     console.log("submit");
   }
 
@@ -52,5 +54,5 @@ export function Form(
 
 Form.propTypes = {
   method: PropTypes.string,
-  onSubmit: PropTypes.func
+  Submit: PropTypes.func
 };
