@@ -1,6 +1,7 @@
 /* Carousel section */
 .carousel {
     padding-top: 5.5rem;
+    
 }
 
 /*Carousel-Slider component*/
@@ -28,7 +29,7 @@
 }
 
 @media screen and (max-width:1024px){
-    .carousel-section{
+    .carousel__slider{
         height:780px;
         grid-template: 1fr / minmax(100px, 1000px);
     }
