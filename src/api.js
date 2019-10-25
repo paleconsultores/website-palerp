@@ -26,7 +26,7 @@ async function callApi(endpoint, options = {}) {
 const api = {
     usuario:{
        enviarCorreoVentas(datos){
-          return callApi('/api/mails', { //enviar correo ventas datos en general del cliente ya sea correo o numereos telefonicos
+          return callApi('/api/mails', { //enviar correo de infor palerp los datos de la persona que son nombre,correo mensaje
             method: 'POST',
             body: JSON.stringify(datos),
           });
