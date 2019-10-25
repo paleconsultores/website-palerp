@@ -20,7 +20,13 @@ export function Form(
 
   async function handleSubmit(e) {
     e.preventDefault();
-    const response = await api.usuario.enviarCorreoVentas({"nombre": name, "correo": email, "mensaje": message});
+    const datos={
+      nombre:name,
+      correo:email,
+      mensaje:message
+    }
+    // const response = await api.usuario.enviarCorreoVentas({"nombre": name, "correo": email, "mensaje": message});
+    const response =await api.usuario.enviarCorreoVentas(datos);
     console.log(response);
     setName('');
     setEmail('');

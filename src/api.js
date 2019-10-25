@@ -1,5 +1,5 @@
 const BASE_URL = 'http://190.119.206.196:3000';
-
+// const BASE_URL = 'http://localhost:4000';
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 const randomNumber = (min = 0, max = 1) =>

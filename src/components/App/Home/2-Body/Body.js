@@ -27,7 +27,7 @@ export function Body() {
       <Carousel/>
       <Services/>
       <ClientList/>
-      {/* <ContactUs/> */}
+      <ContactUs/>
     </div>
   );
 
