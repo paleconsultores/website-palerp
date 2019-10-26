@@ -26,7 +26,7 @@ export function Hero() {
       <div className="intro-text">
         <div className="intro-text__container">
           <TypedText /> 
-          <p className="intro-text__paragraph">Somos una fábrica de software que desarrolla soluciones a medida, teniendo como prioridad la satisfacción del usuario final.</p>
+          <p className="intro-text__paragraph">Somos una fábrica de software que desarrolla soluciones a medida, teniendo como prioridad tu satisfacción.</p>
        
         </div>
       </div>

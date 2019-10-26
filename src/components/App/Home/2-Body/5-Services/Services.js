@@ -22,7 +22,7 @@ export function Services() {
       type: 1,
       alt: 'training',
       title: 'Capacitaciones',
-      description: 'Brindamos capacitaciones, para que se familiaricen con nuestro servicio, absorviendo sus dudas',
+      description: 'A traves de una atención personalizada y el material adecuado, te enseñamos como usar nuestros productos.',
       imageUrl:capacitacion,
       responsiveImages:capacitacionresp
     },
@@ -30,7 +30,7 @@ export function Services() {
       type: 2,
       alt: 'devTeam',
       title: 'Equipo de desarrollo',
-      description: 'Contamos y trabajamos con tecnología de vanguardia para nuestros sistemas de gestión y nuestros productos tecnológicos',
+      description: 'Contamos con la experiencia y capacidad para desarrollar, y entregar aplicaciones de software con tecnología de vanguardia.',
       imageUrl:desarrollo,
       responsiveImages:desarrolloresp
     },
@@ -38,7 +38,7 @@ export function Services() {
       type: 1,
       alt: 'support',
       title: 'Soporte',
-      description: 'Resolvemos tus dudas, brindandote soporte 15/6h, con respuestas inmediatas y tu operación este asegurada',
+      description: 'Resolvemos los problemas que surgan, así como tus dudas, brindandote respuestas inmediatas para que tu operación este asegurada.',
       imageUrl:soporte,
       responsiveImages:soporteresp
     },
@@ -46,7 +46,7 @@ export function Services() {
       type: 2,
       alt: 'sales',
       title: 'Ventas',
-      description: 'Nos encargamos de brindarte información de nuestros productos,nuestro equipo de ventas realizan visitas a los clientes interesados,llevando demos de los productos.',
+      description: 'Nuestro equipo de ventas te brindará la información que necesites acerca de nuestros productos y servicios. te hará visitas y demostraciones para que tomes la mejor decisión.',
       imageUrl:ventas,
       responsiveImages:ventasresp
     }

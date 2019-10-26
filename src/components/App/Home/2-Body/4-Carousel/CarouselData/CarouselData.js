@@ -18,7 +18,7 @@ export const data = {
             "picture":img2,
             "responsivepicture":img2_400, 
             "title":"iFacturación",
-            "text":"Sistema de facturación electrónica que te permite tener un mejor control de tu negocio, es una pieza clave en la modernización de la actividad empresarial.",
+            "text":"Sistema de facturación electrónica que te permite tener un mejor control de tu negocio, es la pieza clave en la modernización de la actividad empresarial.",
             "d1":"Ahorra costo en almacenamiento.",
             "d2":" Mejores control contable y logístico.",
             "d3":"Fácil de usar.",
