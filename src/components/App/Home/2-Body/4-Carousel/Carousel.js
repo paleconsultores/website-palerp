@@ -1,58 +1,32 @@
 //Dependencies
-import React from "react";
+import React, {useState,useEffect} from "react";
 //Resources
 import { data } from './CarouselData'
 import { CarouselCard } from './CarouselCard/CarouselCard'
 import './Carousel.css'
 import {MessageSecond} from "../9-MessageSecond";
 
-export class Carousel extends React.Component {
-  constructor(props) {
-    super(props);
-    /* properties its to manipulate the Carousel data meanwhile property is
-    for manipulate the length or other carousel data in array form */
-    this.state = {
-      properties: data.properties,
-      property: data.properties[0]
-    }
-  }
-  /*Change to the next prperty card*/
-  nextProperty = () => {
-    const newIndex = this.state.property.index + 1;
-    this.setState({
-      property: data.properties[newIndex]
-    })
-  }
-  /*Change to the previus prperty card*/
-  prevProperty = () => {
-    const newIndex = this.state.property.index - 1;
-    this.setState({
-      property: data.properties[newIndex]
-    })
-  }
+export function Carousel(){
+  /*Change to the next property card*/
+  const [properties]=useState(data.properties)
+  const [property,setProperty]=useState(data.properties[0])
+  
   /*Automatic change of state for the slidehow*/
-  changeProperty = () => {
-    var newIndex = this.state.property.index + 1;
+  function changeProperty (){
+    var newIndex = property.index + 1;
     var resetIndex = data.properties.length - 1;
+
     if (newIndex > resetIndex) {
       newIndex=0
     }
-    this.setState({
-      property: data.properties[newIndex]
-    })
+    setProperty(properties[newIndex])
+    
   }
-  /*lifecycle what permit do the action when the component render*/
-  componentDidMount() {
-    this.startCarousel()
-  }
-  /*Start the carousel and set the time in miliseconds to change the properties*/
-  startCarousel = () => {
-    setInterval(()=>{
-      this.changeProperty()
-    },5000)
-  }
-  render() {
-    const { properties, property } = this.state;
+  useEffect(()=>{
+    setTimeout(() => {
+      changeProperty()
+    }, 5000);
+  });
     return (
       <section id="Carousel" className="carousel" >
         <MessageSecond>Productos</MessageSecond>
@@ -71,5 +45,4 @@ export class Carousel extends React.Component {
         </div>
       </section>
     );
-  }
 }

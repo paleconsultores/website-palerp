@@ -51,7 +51,7 @@ export function Footer() {
       </div>
       <div className="footer_info">
         <div>
-          <h4><FontAwesomeIcon icon={faPhone}/> 984-125-256</h4>
+          <h4><FontAwesomeIcon icon={faPhone}/> +51 984-125-256</h4>
           <p>9:00 AM - 6:00 PM</p>
         </div>
         <div>

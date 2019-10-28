@@ -23,7 +23,7 @@ export function Solutions() {
       descripcion:'de Hardware y Software',
       imageUrl: image2,
       responsiveimages : imgr3,
-      text:"Contamos y trabajamos con tecnología de vanguardia para nuestros sistemas de gestion y nuestros productos tecnológicos."
+      text:"Una implementación completa, desde los computadores, laptops y demás equipos que necesitas para operar el software que te ayudará a gestionar tu empresa."
     },
     {
       type: 1,
@@ -32,7 +32,7 @@ export function Solutions() {
       descripcion:'en soluciones de  software',
       imageUrl: image1,
       responsiveimages : imgr1,
-      text:'Brindamos asesoría informática, de manera que se realizar un estudio del sistema de manejo de información de su empresa.'
+      text:'La asesoria profesional que necesitas para sacar el máximo provecho a nuestras soluciones de software.'
     },
     {
       type: 1,
@@ -41,7 +41,7 @@ export function Solutions() {
       descripcion:'a medida',
       imageUrl: developing,
       responsiveimages : imgr2,
-      text:"Desarrollamos software a tu medida, brindamos soluciones a las empresas en distintos rubros."
+      text:"Software hecho a la medida de tus necesidades, y que funcione en los dispositivos que tú prefieras."
     },
   ];
 
