@@ -24,14 +24,15 @@ async function callApi(endpoint, options = {}) {
 }
 
 const api = {
-    usuario:{
-       enviarCorreoVentas(datos){
-          return callApi('/api/mails', { //enviar correo de infor palerp los datos de la persona que son nombre,correo mensaje
-            method: 'POST',
-            body: JSON.stringify(datos),
-          });
-       }
+  user:{
+    // send email to info@palerp the data of the person(name, email and message)
+    sendEmails(data){
+      return callApi('/api/mails', { 
+        method: 'POST',
+        body: JSON.stringify(data),
+      });
     }
+  }
 };
   
 

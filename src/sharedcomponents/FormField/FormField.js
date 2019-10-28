@@ -12,8 +12,8 @@ export function FormField({
                             content = name,
                             value = '',
                             handleChange
-                          }) {
-
+                          }) 
+{
   function selector() {
     switch (formType) {
       case "input":
@@ -33,6 +33,10 @@ export function FormField({
 }
 
 FormField.propTypes = {
+  formType: PropTypes.string,
   type: PropTypes.string,
-  name: PropTypes.string
+  name: PropTypes.string,
+  content: PropTypes.string,
+  value: PropTypes.string,
+  handleChange: PropTypes.func.isRequired
 };

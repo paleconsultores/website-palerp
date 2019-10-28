@@ -1,6 +1,7 @@
 // Dependencies
 import React from "react";
 import { Form } from "../../../../../shared/Form";
+import { FormContactUs } from "./FormContactUs";
 
 // Resources
 import './ContactUs.css';
@@ -12,7 +13,7 @@ export function ContactUs() {
         <h1 className="title title--small title--gray">¿Tienes alguna pregunta?</h1>
         <p className="contact-us__paragraph">Póngase en contacto con nosotros mediante el formulario y le responderemos lo antes posible.</p>
       </div>
-      <Form method="POST" />
+      <FormContactUs />
     </section>
   )
 }
