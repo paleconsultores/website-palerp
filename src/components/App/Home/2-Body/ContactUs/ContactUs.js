@@ -1,6 +1,6 @@
 // Dependencies
 import React from "react";
-import { Form } from "../../../../../shared/Form";
+import { Form } from "../../../../../sharedcomponents/Form";
 import { FormContactUs } from "./FormContactUs";
 
 // Resources

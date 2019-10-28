@@ -1,7 +1,7 @@
 .menu-list {
     list-style: none;
     display: grid;
-    grid-template: 1fr / repeat(5, minmax( auto, 200px));
+    grid-template: 1fr / repeat(4, minmax( auto, 200px));
     padding: 0;
     margin: 0;
     justify-items: center;
@@ -61,7 +61,7 @@
 
 @media screen and (max-width: 1066px) {
   .menu-list {
-    grid-template: 1fr / repeat(4, minmax( auto, 200px));
+    grid-template: 1fr / repeat(3, minmax( auto, 200px));
   }
 
   .menu-list li:first-child {
@@ -75,7 +75,7 @@
   }
 
   .menu-list {
-    grid-template: repeat(4, minmax(50px, 1fr)) / 1fr;
+    grid-template: repeat(3, minmax(50px, 1fr)) / 1fr;
     display: none;
     justify-items: normal;
   }

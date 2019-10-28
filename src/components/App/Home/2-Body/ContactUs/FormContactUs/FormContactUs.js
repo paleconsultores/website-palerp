@@ -1,6 +1,6 @@
 // Dependencies
 import React, { useState, useEffect } from "react";
-import { Form } from "../../../../../../shared/Form/Form";
+import { Form } from "../../../../../../sharedcomponents/Form/Form";
 import api from "../../../../../../api";
 
 // Resources
