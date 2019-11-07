@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone} from "@fortawesome/free-solid-svg-icons";
 export function Footer() {
   return(
+    <div className="section_Footer">
     <footer>
       <div className="footer_info">
         <div>
@@ -67,5 +68,6 @@ export function Footer() {
         <p>Copyright © 2019Palerp</p>
       </div>
     </footer>
+    </div>
   );
 }

@@ -1,3 +1,11 @@
+.section_Footer{
+  display: grid;
+  grid-template-rows:auto / minmax(200px, 1200px);
+  background: #000000;
+  height: auto;
+  width: 100%;
+  justify-content: center;
+}
 footer {
 
   display: grid;
@@ -6,8 +14,7 @@ footer {
   height: auto;
   width: 100%;
   align-self: center;
-  padding-left: 20px;
-  padding-right: 0px;
+
 }
 
 .footer_info {
@@ -16,16 +23,15 @@ footer {
   /* grid-template: repeat(1,auto)/ repeat(1, 380px 250px 490px); */
   grid-template: repeat(1,auto)/ repeat(3,auto); 
   gap:5rem;
-  justify-content: center;
+  align-self: center;
 
 }
 
 .footer_servicios{
   display: grid;
-  /* grid-template: repeat(1,auto)/repeat(1,245px 245px); */
   grid-template: repeat(1,auto)/repeat(2,auto); 
   gap:1.5rem;
-  justify-content: center;
+  align-self: center;
 }
 
 .footer_servicios p{
@@ -91,6 +97,7 @@ footer {
   .footer_info {
     grid-template: repeat(1, minmax(auto, 1fr)) / 1fr;
     gap: 0.8rem;
+    
   }
   .footer_info hr{
     background-color: #69B4CA;
@@ -101,6 +108,7 @@ footer {
   .footer_servicios{
     grid-template: repeat(1, minmax(auto, 1fr)) / 1fr;
     gap: 0.8rem;
+  
     
   }
   .footer_info p{
@@ -128,11 +136,13 @@ footer {
   .footer_info {
     grid-template: repeat(1, minmax(auto, 1fr)) / 1fr;
     gap: 0.8rem;
+  
   }
  
   .footer_servicios{
     grid-template: repeat(1, minmax(auto, 1fr)) /1fr;
     gap: 0.8rem;
+    
   }
   .footer_info hr{
     background-color: #69B4CA;
