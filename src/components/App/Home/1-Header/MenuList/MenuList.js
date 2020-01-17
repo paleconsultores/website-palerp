@@ -12,6 +12,7 @@ export function MenuList() {
       <li><a href="#Carousel">Productos</a></li>
       <li><a href="#ClientList">Clientes</a></li>
       <li><a href="#ContactUs">Contáctanos</a></li>
+      <li><a href="http://pacademia.hopto.org">Moodle</a></li>
     </ul>
   );
 }
