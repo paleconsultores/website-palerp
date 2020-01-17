@@ -12,7 +12,7 @@ export function MenuList() {
       <li><a href="#Carousel">Productos</a></li>
       <li><a href="#ClientList">Clientes</a></li>
       <li><a href="#ContactUs">Contáctanos</a></li>
-      <li><a href="pacademia.hopto.org/moodle/">Academia</a></li>
+      <li><a href="http://paleacademia.hopto.org/moodle/">Academia</a></li>
     </ul>
   );
 }
