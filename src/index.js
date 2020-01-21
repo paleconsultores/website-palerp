@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 import App from './components/App/App';
-import 'font-awesome/css/font-awesome.min.css'
+import 'font-awesome/css/font-awesome.min.css';
+import { CookiesProvider } from 'react-cookie';
 
 ReactDOM.render(
-  <App />
+  <CookiesProvider>    
+    <App />
+  </CookiesProvider>
 , document.getElementById('app'));
 
 // If you want your app to work offline and load faster, you can change
