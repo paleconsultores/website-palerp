@@ -22,6 +22,14 @@
     flex-direction: row wrap;
     justify-content: space-between;
 }
+.Form_filas{
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: flex-start;
+}
+.Form_filas input{
+    height:auto;
+}
 
 .FormReclamaciones p{
     color: #4B75B8;

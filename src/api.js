@@ -1,5 +1,5 @@
-const BASE_URL = 'http://190.119.206.196:3000';
-// const BASE_URL = 'http://localhost:4000';
+// const BASE_URL = 'http://190.119.206.196:3000';
+const BASE_URL = 'http://localhost:5000';
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 const randomNumber = (min = 0, max = 1) =>
@@ -32,6 +32,20 @@ const api = {
         body: JSON.stringify(data),
       });
     }
+  },
+  libroReclamaciones:{
+    guardarIncidencia(datos){
+      return callApi('/api/AIncidentes/save', {
+          method: 'POST',
+          body: JSON.stringify(datos),
+        });
+   },
+   creacionPDF(datos){
+    return callApi('/api/mails/emailCliente', {
+        method: 'POST',
+        body: JSON.stringify(datos),
+      });
+    },
   }
 };
   
