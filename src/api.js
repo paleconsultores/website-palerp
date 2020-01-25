@@ -34,7 +34,7 @@ const api = {
     }
   },
   libroReclamaciones:{
-    guardarIncidencia(datos){
+    guardarReclamo(datos){
       return callApi('/api/AIncidentes/save', {
           method: 'POST',
           body: JSON.stringify(datos),

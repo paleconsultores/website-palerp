@@ -19,11 +19,9 @@ export default class LibroReclamaciones extends React.Component{
                 email:'',
                 celular:'',
                 representante:'',
-                resProducto:'',
-                resServicio:'',
+                resProduServi:'',
                 motivo:'',
-                respReclamo:'',
-                respQueja:'',
+                respTipo:'',
                 pedido:'',
                 detalle:'',
                 menorEdad:'',
@@ -32,14 +30,21 @@ export default class LibroReclamaciones extends React.Component{
                 primerApellidoApo:'',
                 segundoApellidoApo:'',
                 repreEmpresa:'',
-
+                razonSocial:'',
+                ruc_rus:'',
             },
             data:{
                 resultado:[]
                 },
-              consulta:{
-                message:undefined
-              },
+            email:{
+                resultado:[]
+            },
+            reclamo:{
+             resultado:[]
+            },
+            consulta:{
+            message:undefined
+            },
         }
         this.handleChange=this.handleChange.bind(this);
         this.handleSubmit=this.handleSubmit.bind(this);
@@ -60,74 +65,83 @@ export default class LibroReclamaciones extends React.Component{
 
 
         try{
-            // const variables={
-            //     procedure:'',
-            //     parametros:[
-            //         {nom_parametro:'fecha',valor_parametro:this.state.form.fecha},
-            //         {nom_parametro:'numeroReclamaciones',valor_parametro:this.state.form.numeroReclamaciones},
-            //         {nom_parametro:'nombre',valor_parametro:this.state.form.nombre},
-            //         {nom_parametro:'primerApellido',valor_parametro:this.state.form.primerApellidoApellido},
-            //         {nom_parametro:'segundoApellido',valor_parametro:this.state.form.segundoApellido},
-            //         {nom_parametro:'domicilo',valor_parametro:this.state.form.domicilio},
-            //         {nom_parametro:'dni',valor_parametro:this.state.form.dni},
-            //         {nom_parametro:'email',valor_parametro:this.state.form.email},
-            //         {nom_parametro:'celular',valor_parametro:this.state.form.celular},
-            //         {nom_parametro:'representante',valor_parametro:this.state.form.representante},
-            //         {nom_parametro:'resProducto',valor_parametro:this.state.form.resProducto},
-            //         {nom_parametro:'resServicio',valor_parametro:this.state.form.resServicio},
-            //         {nom_parametro:'motivo',valor_parametro:this.state.form.motivo},
-            //         {nom_parametro:'respQueja',valor_parametro:this.state.form.respQueja},
-            //         {nom_parametro:'pedido',valor_parametro:this.state.form.pedido},
-            //         {nom_parametro:'detalle',valor_parametro:this.state.form.detalle}
-            //     ]
-            // }
-            var fechaActual=new Date();
-            this.state.form.fecha=fechaActual;
-            const datos={
 
-                   fecha:this.state.form.fecha,
-                   numeroReclamaciones:this.state.form.numeroReclamaciones,
-                   nombre:this.state.form.nombre,
-                   primerApellido:this.state.form.primerApellidoApellido,
-                   segundoApellido:this.state.form.segundoApellido,
-                   domicilo:this.state.form.domicilio,
-                   dni:this.state.form.dni,
-                   email:this.state.form.email,
-                   celular:this.state.form.celular,
-                   representante:this.state.form.representante,
-                   resProducto:this.state.form.resProducto,
-                   resServicio:this.state.form.resServicio,
-                   motivo:this.state.form.motivo,
-                   respQueja:this.state.form.respQueja,
-                   pedido:this.state.form.pedido,
-                   detalle:this.state.form.detalle,
-                   dniApoderado:this.state.form.dniApoderado,
-                   nombreApoderado: this.state.form.nombreApoderado,
-                   primerApellidoApo:this.state.form.primerApellidoApo,
-                   segundoApellidoApo:this.state.form.segundoApellidoApo 
+            var fechaActual=new Date(Date.now());
+            this.state.form.fecha=fechaActual;
+            const nombreCompleto=this.state.form.nombre+' '+this.state.form.primerApellido+' '+this.state.form.segundoApellido
+            const variables={
+                procedure:'USP_SOP_INCIDENCIAS_G',
+                parametros:[
+                    {nom_parametro:'Id_Incidencia',valor_parametro:''},
+                    {nom_parametro:'Nro_Incidencia',valor_parametro:''},
+                    {nom_parametro:'Id_ClienteProveedor',valor_parametro:'105684'},
+                    {nom_parametro:'Id_Terminal',valor_parametro:''},
+                    {nom_parametro:'Cod_TipoIncidencia',valor_parametro:''},
+                    {nom_parametro:'Cod_Prioridad',valor_parametro:'003'},
+                    {nom_parametro:'Cod_Complejidad',valor_parametro:'003'},
+                    {nom_parametro:'Nro_Contacto',valor_parametro:this.state.form.celular},
+                    {nom_parametro:'Nom_Contacto',valor_parametro:nombreCompleto},
+                    {nom_parametro:'Detalle',valor_parametro:this.state.form.detalle},
+                    {nom_parametro:'Respuesta',valor_parametro:''},
+                    {nom_parametro:'Cod_MedioOrigen',valor_parametro:'006'},
+                    {nom_parametro:'Obs_Incidencia',valor_parametro:this.state.form.motivo},
+                    {nom_parametro:'Cod_Estado',valor_parametro:'001'},
+                    {nom_parametro:'Fecha_Inicia',valor_parametro:this.state.form.fecha},
+                    {nom_parametro:'Fecha_Finaliza',valor_parametro:''},
+                    {nom_parametro:'Cod_UsuarioIncidencia',valor_parametro:'WEB'},
+                    {nom_parametro:'Cod_TipoEncuesta',valor_parametro:this.state.form.respTipo},
+                    {nom_parametro:'Pregunta1',valor_parametro:''},
+                    {nom_parametro:'Pregunta2',valor_parametro:''},
+                    {nom_parametro:'Pregunta3',valor_parametro:''},
+                    {nom_parametro:'Cod_Usuario',valor_parametro:'WEB'},
+                ]
             }
-        const data= await api.libroReclamaciones.creacionPDF(datos);
-        //         if(data.message==="datoGuardado"){
-                
-        //             window.location.href = '/'; 
-            
-        // }
-          
-          this.setState({
-            consulta:{message:[].concat(this.state.data,data.message)},
-            data:{resultado:[].concat(this.state.data,data.resultado)}
-          });
-        // const data= await apiGeneral.LibroReclamaciones.guardar(variables);
-        // if(data.message==="datoGuardado"){
-        
-        //     window.location.href = '/'; 
-    
-        //   }
-          
-        //   this.setState({
-        //     consulta:{message:[].concat(this.state.data,data.message)},
-        //     data:{resultado:[].concat(this.state.data,data.resultado)}
-        //   });
+            const reclamo= await api.libroReclamaciones.guardarReclamo(variables); 
+            console.log(reclamo);
+            console.log(reclamo.message);
+            this.setState({
+                email:{resultado:[].concat(this.state.reclamo,reclamo.resultado)}
+            });
+            if(reclamo.message==="datoGuardado"){
+
+                const datos={
+                    fecha:this.state.form.fecha,
+                    numeroReclamaciones:this.state.form.numeroReclamaciones,
+                    nombre:this.state.form.nombre,
+                    primerApellido:this.state.form.primerApellidoApellido,
+                    segundoApellido:this.state.form.segundoApellido,
+                    domicilo:this.state.form.domicilio,
+                    dni:this.state.form.dni,
+                    email:this.state.form.email,
+                    celular:this.state.form.celular,
+                    resProduServi:this.state.form.resProduServi,
+                    respTipo:this.state.form.respTipo,
+                    motivo:this.state.form.motivo,
+                    pedido:this.state.form.pedido,
+                    detalle:this.state.form.detalle,
+                    dniApoderado:this.state.form.dniApoderado,
+                    nombreApoderado: this.state.form.nombreApoderado,
+                    primerApellidoApo:this.state.form.primerApellidoApo,
+                    segundoApellidoApo:this.state.form.segundoApellidoApo, 
+                    razonSocial:this.state.form.razonSocial,
+                    ruc_rus:this.state.form.ruc_rus
+             }
+         const data= await api.libroReclamaciones.creacionPDF(datos);
+         //         if(data.message==="datoGuardado"){
+                 
+         //             window.location.href = '/'; 
+             
+         // }
+           
+           this.setState({
+             consulta:{message:[].concat(this.state.data,data.message)},
+             data:{resultado:[].concat(this.state.data,data.resultado)}
+           });
+            }
+            else{
+                console.log("No se pudo enviar el email")
+                   
+            }
 
         }catch(error){
             console.log('Error',error)
@@ -137,7 +151,7 @@ export default class LibroReclamaciones extends React.Component{
     }
     render(){
     return(
-        <div className="FormReclamaciones">
+        <div >
             <div className="Form_encabezado">
                  <h1>Libro de Reclamaciones</h1>
                  <img src={imagen} alt='libro reclamaciones'/>
@@ -173,7 +187,7 @@ export default class LibroReclamaciones extends React.Component{
                                     </label>   
                                 </div>
                                 <div>
-                                    <input type="number" id="dni_ruc" value={this.state.form.ruc} onChange={this.handleChange} name="dni" placeholder="Ingrese su numero de documento"/>
+                                    <input type="number" id="dni_ruc" value={this.state.form.dniApoderado} onChange={this.handleChange} name="dniApoderado" placeholder="Ingrese su numero de documento"/>
                                 </div>
                              </div>
                              <div className="Form_colum">
@@ -182,7 +196,7 @@ export default class LibroReclamaciones extends React.Component{
                                     Nombres
                                 </label>
                                 <div>
-                                    <input type="text" id="nombre" value={this.state.form.nombre} onChange={this.handleChange} name="nombre" placeholder="Ingrese sus nombres"/>
+                                    <input type="text" id="nombreApoderado" value={this.state.form.nombreApoderado} onChange={this.handleChange} name="nombreApoderado" placeholder="Ingrese sus nombres"/>
                                 </div>
                             </div>
                             <div>
@@ -190,7 +204,7 @@ export default class LibroReclamaciones extends React.Component{
                                     Primer apellido
                                 </label>
                                 <div>
-                                    <input type="text" id="primerApellido" value={this.state.form.primerApellido} onChange={this.handleChange} name="primerApellido" placeholder="Ingrese primer apellido"/>
+                                    <input type="text" id="primerApellidoApo" value={this.state.form.primerApellidoApo} onChange={this.handleChange} name="primerApellidoApo" placeholder="Ingrese primer apellido"/>
                                 </div>
                             </div>
                             <div>
@@ -198,7 +212,7 @@ export default class LibroReclamaciones extends React.Component{
                                     Segundo apellido
                                 </label>
                                 <div>
-                                    <input type="text" id="segundoApellido" value={this.state.form.segundoApellido} onChange={this.handleChange} name="segundoApellido" placeholder="Ingrese segundo apellido"/>
+                                    <input type="text" id="segundoApellidoApo" value={this.state.form.segundoApellidoApo} onChange={this.handleChange} name="segundoApellidoApo" placeholder="Ingrese segundo apellido"/>
                                 </div>
                             </div>
                          </div> 
@@ -214,7 +228,7 @@ export default class LibroReclamaciones extends React.Component{
                             </label>   
                         </div>
                         <div>
-                            <input type="number" id="dni_ruc" value={this.state.form.ruc} onChange={this.handleChange} name="dni" placeholder="Ingrese su numero de documento"/>
+                            <input type="number" id="dni_ruc" value={this.state.form.dni} onChange={this.handleChange} name="dni" placeholder="Ingrese su numero de documento"/>
                         </div>
                     </div>
                        <div className="Form_colum">
@@ -268,7 +282,7 @@ export default class LibroReclamaciones extends React.Component{
                             Razon Social
                            </label>
                            <div>
-                               <input type="text" id="nombre" value={this.state.form.nombre} onChange={this.handleChange} name="nombre" placeholder="Ingrese su razon Social"/>
+                               <input type="text" id="razonSocial" value={this.state.form.razonSocial} onChange={this.handleChange} name="razonSocial" placeholder="Ingrese su razon Social"/>
                            </div>
                        </div>
                        <div>
@@ -276,7 +290,7 @@ export default class LibroReclamaciones extends React.Component{
                              RUC/RUS
                            </label>
                            <div>
-                               <input type="text" id="primerApellido" value={this.state.form.primerApellido} onChange={this.handleChange} name="primerApellido" placeholder="Ingrese su RUC/RUS"/>
+                               <input type="number" id="ruc_rus" value={this.state.form.ruc_rus} onChange={this.handleChange} name="ruc_rus" placeholder="Ingrese su RUC/RUS"/>
                            </div>
                        </div>
                     </div> 
@@ -319,20 +333,12 @@ export default class LibroReclamaciones extends React.Component{
                     <hr/>
                     <div className="Form_colum">
                         <div>
-                            <label>
-                                Producto
+                            <label>Producto/Servicio
+                            <select name="resProduServi" value={this.state.form.resProduServi} onChange={this.handleChange}>
+                                <option name="resProduServi" value="servicio">Software</option>
+                                <option name="resProduServi" value="producto">Hardware</option>   
+                            </select>
                             </label>
-                            <div>
-                                <input type="text" id="producto" name="resProducto" value={this.state.form.resProducto} onChange={this.handleChange} placeholder="Ingrese producto o servicio"/>
-                            </div>
-                        </div>
-                        <div>
-                            <label>
-                               Servicio
-                            </label>
-                            <div>
-                                <input type="text" id="producto" name="resProducto" value={this.state.form.resServicio} onChange={this.handleChange} placeholder="Ingrese servicio"/>
-                            </div>
                         </div>
                         <div>
                             <label>
@@ -361,6 +367,20 @@ export default class LibroReclamaciones extends React.Component{
                                 <textarea id="detalle" name="detalle" value={this.state.form.detalle} onChange={this.handleChange} placeholder="Ingrese el detalle" ></textarea>
                             </div>
                         </div>
+                        <div>
+                            <div>
+                                <label>Tipo</label>
+                            </div>
+                            <div className="Form_filas" id="Tipo" value={this.state.form.respTipo} onChange={this.handleChange}>
+                            <div>
+                                <label><input type="radio" name="respTipo" value="Reclamo"/> Reclamo</label> 
+                            </div>
+                            <div>
+                                <label><input type="radio" name="respTipo"  value="Queja"/>Queja</label>
+                            </div>
+
+                            </div>
+                      </div>
                     </div>
                 </div>
             </form>
