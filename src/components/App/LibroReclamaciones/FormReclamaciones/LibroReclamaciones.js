@@ -42,6 +42,9 @@ export default class LibroReclamaciones extends React.Component{
             reclamo:{
              resultado:[]
             },
+            Nro_Incidencia:{
+                resultado:[]
+            },
             consulta:{
             message:undefined
             },
@@ -62,13 +65,21 @@ export default class LibroReclamaciones extends React.Component{
 
   async handleSubmit(e){
       e.preventDefault();
-
-
         try{
 
-            var fechaActual=new Date(Date.now());
+            var fechaActual=new Date();
             this.state.form.fecha=fechaActual;
+            console.log(this.state.form.fecha);
             const nombreCompleto=this.state.form.nombre+' '+this.state.form.primerApellido+' '+this.state.form.segundoApellido
+            var tipoIncidencia='';
+
+            if(this.state.form.resProduServi==='servicio'){
+                tipoIncidencia='201';
+            }
+            if(this.state.form.resProduServi==='producto'){
+                tipoIncidencia='301';
+            }
+            console.log(tipoIncidencia);
             const variables={
                 procedure:'USP_SOP_INCIDENCIAS_G',
                 parametros:[
@@ -76,7 +87,7 @@ export default class LibroReclamaciones extends React.Component{
                     {nom_parametro:'Nro_Incidencia',valor_parametro:''},
                     {nom_parametro:'Id_ClienteProveedor',valor_parametro:'105684'},
                     {nom_parametro:'Id_Terminal',valor_parametro:''},
-                    {nom_parametro:'Cod_TipoIncidencia',valor_parametro:''},
+                    {nom_parametro:'Cod_TipoIncidencia',valor_parametro:tipoIncidencia},
                     {nom_parametro:'Cod_Prioridad',valor_parametro:'003'},
                     {nom_parametro:'Cod_Complejidad',valor_parametro:'003'},
                     {nom_parametro:'Nro_Contacto',valor_parametro:this.state.form.celular},
@@ -103,10 +114,22 @@ export default class LibroReclamaciones extends React.Component{
                 email:{resultado:[].concat(this.state.reclamo,reclamo.resultado)}
             });
             if(reclamo.message==="datoGuardado"){
-
+                const datosReclamo={
+                procedure:'USP_SOP_INCIDENCIAS_TraerNroIncidencia',
+                parametros:[
+                    {nom_parametro:"Nom_Contacto",valor_parametro:nombreCompleto},
+                    {nom_parametro:"Fecha_Inicia",valor_parametro:this.state.form.fecha}
+                    ]
+                }
+             
+             const nroIncidencia=await api.libroReclamaciones.traerNroIncidencia(datosReclamo);
+             this.setState({
+                Nro_Incidencia:{resultado:[].concat(this.state.Nro_Incidencia,nroIncidencia.resultado)}
+             });
+             const incidenciaNro=nroIncidencia.resultado["0"].Nro_Incidencia;
                 const datos={
                     fecha:this.state.form.fecha,
-                    numeroReclamaciones:this.state.form.numeroReclamaciones,
+                    numeroReclamaciones:incidenciaNro,
                     nombre:this.state.form.nombre,
                     primerApellido:this.state.form.primerApellidoApellido,
                     segundoApellido:this.state.form.segundoApellido,
@@ -126,17 +149,12 @@ export default class LibroReclamaciones extends React.Component{
                     razonSocial:this.state.form.razonSocial,
                     ruc_rus:this.state.form.ruc_rus
              }
-         const data= await api.libroReclamaciones.creacionPDF(datos);
-         //         if(data.message==="datoGuardado"){
-                 
-         //             window.location.href = '/'; 
-             
-         // }
-           
-           this.setState({
-             consulta:{message:[].concat(this.state.data,data.message)},
-             data:{resultado:[].concat(this.state.data,data.resultado)}
-           });
+            const data= await api.libroReclamaciones.creacionPDF(datos);
+            console.log(data);
+            this.setState({
+            consulta:{message:[].concat(this.state.data,data.message)},
+            data:{resultado:[].concat(this.state.data,data.resultado)}
+            });
             }
             else{
                 console.log("No se pudo enviar el email")
@@ -151,7 +169,7 @@ export default class LibroReclamaciones extends React.Component{
     }
     render(){
     return(
-        <div >
+        <div className="FormReclamaciones">
             <div className="Form_encabezado">
                  <h1>Libro de Reclamaciones</h1>
                  <img src={imagen} alt='libro reclamaciones'/>
@@ -167,10 +185,10 @@ export default class LibroReclamaciones extends React.Component{
                         </div>
                         <div className="Form_filas" id="menorEdad" value={this.state.form.menorEdad} onChange={this.handleChange}>
                         <div>
-                            <label><input type="radio" name="menorEdad" value="SI" /> SI</label>
+                            <label> <input type="radio" name="menorEdad" value="SI"/> SI</label>
                         </div>
                         <div>
-                            <label><input type="radio" name="menorEdad"  value="NO" />NO</label>
+                            <label><input type="radio" name="menorEdad"  value="NO"/>NO</label>
                         </div>
 
                         </div>
@@ -373,10 +391,10 @@ export default class LibroReclamaciones extends React.Component{
                             </div>
                             <div className="Form_filas" id="Tipo" value={this.state.form.respTipo} onChange={this.handleChange}>
                             <div>
-                                <label><input type="radio" name="respTipo" value="Reclamo"/> Reclamo</label> 
+                                <label><input type="radio" name="respTipo" value="Reclamo"/>Reclamo</label> 
                             </div>
                             <div>
-                                <label><input type="radio" name="respTipo"  value="Queja"/>Queja</label>
+                                <label><input type="radio"  name="respTipo"  value="Queja"/>Queja</label>
                             </div>
 
                             </div>

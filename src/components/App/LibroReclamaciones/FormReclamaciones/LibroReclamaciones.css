@@ -27,8 +27,15 @@
     flex-direction: row wrap;
     justify-content: flex-start;
 }
-.Form_filas input{
-    height:auto;
+.Form_filas input[type="radio" i]{
+    background-color: initial;
+    cursor: default;
+    -webkit-appearance: radio;
+    box-sizing: border-box;
+    padding: initial;
+    border: initial;
+    height: 20px;
+    margin: 10px;
 }
 
 .FormReclamaciones p{
@@ -39,6 +46,8 @@
 .FormReclamaciones label{
     font-weight: bold;
     font-size: 14px;
+    margin: 20px;
+ 
 }
 .FormReclamaciones input{
     border-radius:8px 8px 8px 8px;

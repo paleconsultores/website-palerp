@@ -40,12 +40,24 @@ const api = {
           body: JSON.stringify(datos),
         });
    },
+   traerNroIncidencia(datos){
+    return callApi('/api/AIncidentes/listarUno', {
+      method: 'POST',
+      body: JSON.stringify(datos),
+    });
+   },
    creacionPDF(datos){
-    return callApi('/api/mails/emailCliente', {
+    return callApi('/api/mails/crearPDF', {
         method: 'POST',
         body: JSON.stringify(datos),
       });
     },
+    enviarEmail(datos){
+        return callApi('/api/mails/emailCliente', {
+        method: 'POST',
+        body: JSON.stringify(datos),
+      });
+    }
   }
 };
   
