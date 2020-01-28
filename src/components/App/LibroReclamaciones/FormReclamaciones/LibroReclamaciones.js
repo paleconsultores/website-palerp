@@ -33,21 +33,20 @@ export default class LibroReclamaciones extends React.Component{
                 razonSocial:'',
                 ruc_rus:'',
             },
-            data:{
+            guardarReclamo:{
                 resultado:[]
                 },
-            email:{
-                resultado:[]
-            },
-            reclamo:{
-             resultado:[]
-            },
+           
             Nro_Incidencia:{
                 resultado:[]
             },
-            consulta:{
-            message:undefined
+            crearPDF:{
+                resultado:[]
             },
+            email:{
+             resultado:[]
+            },
+            mostrar:false,
         }
         this.handleChange=this.handleChange.bind(this);
         this.handleSubmit=this.handleSubmit.bind(this);
@@ -73,12 +72,11 @@ export default class LibroReclamaciones extends React.Component{
             const nombreCompleto=this.state.form.nombre+' '+this.state.form.primerApellido+' '+this.state.form.segundoApellido
             var tipoIncidencia='';
 
-            if(this.state.form.resProduServi==='servicio'){
-                tipoIncidencia='201';
-            }
             if(this.state.form.resProduServi==='producto'){
                 tipoIncidencia='301';
-            }
+            }else{
+                tipoIncidencia='201';
+            }   
             console.log(tipoIncidencia);
             const variables={
                 procedure:'USP_SOP_INCIDENCIAS_G',
@@ -111,7 +109,7 @@ export default class LibroReclamaciones extends React.Component{
             console.log(reclamo);
             console.log(reclamo.message);
             this.setState({
-                email:{resultado:[].concat(this.state.reclamo,reclamo.resultado)}
+                guardarReclamo:{resultado:[].concat(this.state.guardarReclamo,reclamo.resultado)}
             });
             if(reclamo.message==="datoGuardado"){
                 const datosReclamo={
@@ -127,11 +125,12 @@ export default class LibroReclamaciones extends React.Component{
                 Nro_Incidencia:{resultado:[].concat(this.state.Nro_Incidencia,nroIncidencia.resultado)}
              });
              const incidenciaNro=nroIncidencia.resultado["0"].Nro_Incidencia;
-                const datos={
+            
+                const datosPDF={
                     fecha:this.state.form.fecha,
                     numeroReclamaciones:incidenciaNro,
                     nombre:this.state.form.nombre,
-                    primerApellido:this.state.form.primerApellidoApellido,
+                    primerApellido:this.state.form.primerApellido,
                     segundoApellido:this.state.form.segundoApellido,
                     domicilo:this.state.form.domicilio,
                     dni:this.state.form.dni,
@@ -149,21 +148,39 @@ export default class LibroReclamaciones extends React.Component{
                     razonSocial:this.state.form.razonSocial,
                     ruc_rus:this.state.form.ruc_rus
              }
-            const data= await api.libroReclamaciones.creacionPDF(datos);
-            console.log(data);
+            const crearPDF= await api.libroReclamaciones.creacionPDF(datosPDF);
+            console.log(crearPDF);
             this.setState({
-            consulta:{message:[].concat(this.state.data,data.message)},
-            data:{resultado:[].concat(this.state.data,data.resultado)}
+                crearPDF:{resultado:[].concat(this.state.crearPDF,crearPDF.resultado)}
             });
+
+            if(crearPDF.message==="creadoPDF"){
+            const datosEmail={
+                numeroReclamaciones:incidenciaNro,
+                nombre:this.state.form.nombre,
+                primerApellido:this.state.form.primerApellido,
+                segundoApellido:this.state.form.segundoApellido,
+                email:this.state.form.email
+
+            }
+            const email=await api.libroReclamaciones.enviarEmail(datosEmail);
+            this.setState({
+                email:{resultado:[].concat(this.state.email,email.resultado)}
+            });
+
+            }else{
+
+                console.log("No se pudo crear el pdf")
+             }
             }
             else{
-                console.log("No se pudo enviar el email")
+                console.log("No se pudo guardar los datos");
                    
             }
 
         }catch(error){
-            console.log('Error',error)
-            alert('revise los datos porfavor hubo un error');
+            console.log('Error',error);
+            // alert('revise los datos porfavor hubo un error');
         }
 
     }
