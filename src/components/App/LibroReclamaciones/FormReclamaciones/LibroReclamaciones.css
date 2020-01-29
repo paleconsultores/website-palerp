@@ -22,10 +22,25 @@
     flex-direction: row wrap;
     justify-content: space-between;
 }
+.Form_colum select{
+  border-radius:8px 8px 8px 8px;
+  font-size: 13px;
+  line-height: 18px;
+  border-radius: 5px !important;
+  border: 1px solid #0082ca8a; 
+  box-shadow: none; 
+  outline: none; 
+  padding: 16px 30px 15px; 
+  transition: all 0.3s ease; 
+  box-sizing: border-box !important;
+  display: block;
+  height: 49px;
+  margin:15px;
+}
 .Form_filas{
     display: flex;
     flex-direction: row wrap;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
 }
 .Form_filas input[type="radio" i]{
     background-color: initial;
@@ -95,6 +110,7 @@
     font-weight: bold;
     border-radius: 5px;
     padding: 10px;
+    margin:10px;
 }
 
 

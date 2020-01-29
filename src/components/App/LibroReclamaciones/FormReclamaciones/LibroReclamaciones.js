@@ -167,6 +167,11 @@ export default class LibroReclamaciones extends React.Component{
             this.setState({
                 email:{resultado:[].concat(this.state.email,email.resultado)}
             });
+            if(email.message==="EnviadoEmail"){
+        
+                window.location.href = '/'; 
+        
+              }
 
             }else{
 
@@ -202,10 +207,10 @@ export default class LibroReclamaciones extends React.Component{
                         </div>
                         <div className="Form_filas" id="menorEdad" value={this.state.form.menorEdad} onChange={this.handleChange}>
                         <div>
-                            <label> <input type="radio" name="menorEdad" value="SI"/> SI</label>
+                            <input type="radio" name="menorEdad" value="SI"/><label>  SI</label>
                         </div>
                         <div>
-                            <label><input type="radio" name="menorEdad"  value="NO"/>NO</label>
+                           <input type="radio" name="menorEdad"  value="NO"/> <label>NO</label>
                         </div>
 
                         </div>
@@ -300,10 +305,10 @@ export default class LibroReclamaciones extends React.Component{
                     </div>
                     <div className="Form_filas" id="Empresa" value={this.state.form.repreEmpresa} onChange={this.handleChange}>
                     <div>
-                        <label><input type="radio" name="repreEmpresa" value="SI" /> SI</label>
+                       <input type="radio" name="repreEmpresa" value="SI" /><label> SI</label>
                     </div>
                     <div>
-                        <label><input type="radio" name="repreEmpresa"  value="NO" />NO</label>
+                        <input type="radio" name="repreEmpresa"  value="NO" /><label>NO</label>
                     </div>
 
                     </div>
@@ -314,18 +319,18 @@ export default class LibroReclamaciones extends React.Component{
                         <div className="Form_colum">
                         <div>
                            <label>
-                            Razon Social
-                           </label>
-                           <div>
-                               <input type="text" id="razonSocial" value={this.state.form.razonSocial} onChange={this.handleChange} name="razonSocial" placeholder="Ingrese su razon Social"/>
-                           </div>
-                       </div>
-                       <div>
-                           <label>
                              RUC/RUS
                            </label>
                            <div>
                                <input type="number" id="ruc_rus" value={this.state.form.ruc_rus} onChange={this.handleChange} name="ruc_rus" placeholder="Ingrese su RUC/RUS"/>
+                           </div>
+                       </div>
+                        <div>
+                           <label>
+                            Razon Social
+                           </label>
+                           <div>
+                               <input type="text" id="razonSocial" value={this.state.form.razonSocial} onChange={this.handleChange} name="razonSocial" placeholder="Ingrese su razon Social"/>
                            </div>
                        </div>
                     </div> 
@@ -408,10 +413,10 @@ export default class LibroReclamaciones extends React.Component{
                             </div>
                             <div className="Form_filas" id="Tipo" value={this.state.form.respTipo} onChange={this.handleChange}>
                             <div>
-                                <label><input type="radio" name="respTipo" value="Reclamo"/>Reclamo</label> 
+                               <input type="radio" name="respTipo" value="Reclamo"/><label>Reclamo</label> 
                             </div>
                             <div>
-                                <label><input type="radio"  name="respTipo"  value="Queja"/>Queja</label>
+                                <input type="radio"  name="respTipo"  value="Queja"/><label>Queja</label>
                             </div>
 
                             </div>
