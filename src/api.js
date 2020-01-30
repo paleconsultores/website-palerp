@@ -1,5 +1,6 @@
 // const BASE_URL = 'http://190.119.206.196:3000';
-const BASE_URL = 'http://localhost:5000';
+const BASE_URL = 'https://www.api.consultasruc.com:4000';
+// const BASE_URL = 'http://localhost:5000';
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 const randomNumber = (min = 0, max = 1) =>

@@ -121,6 +121,7 @@ export default class LibroReclamaciones extends React.Component{
                 }
              
              const nroIncidencia=await api.libroReclamaciones.traerNroIncidencia(datosReclamo);
+             console.log(nroIncidencia);
              this.setState({
                 Nro_Incidencia:{resultado:[].concat(this.state.Nro_Incidencia,nroIncidencia.resultado)}
              });
@@ -164,6 +165,7 @@ export default class LibroReclamaciones extends React.Component{
 
             }
             const email=await api.libroReclamaciones.enviarEmail(datosEmail);
+            console.log(email);
             this.setState({
                 email:{resultado:[].concat(this.state.email,email.resultado)}
             });
