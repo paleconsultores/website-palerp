@@ -364,7 +364,7 @@ export default class LibroReclamaciones extends React.Component{
                                 Domicilio
                             </label>
                             <div>
-                                <input type="text" id="celular" name="domicilio" value={this.state.form.domicilio} onChange={this.handleChange} placeholder="Ingrese su celular"/>
+                                <input type="text" id="celular" name="domicilio" value={this.state.form.domicilio} onChange={this.handleChange} placeholder="Ingrese su domicilio"/>
                             </div>
                         </div>
                     </div>
