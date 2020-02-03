@@ -32,7 +32,7 @@ export function Header() {
   return(
     <header className={'header ' + (shouldBgChange ? 'header--positive' : '')}>
       <nav className="header__navbar topnav">
-        <a href="#Hero" className="header__brand">
+        <a href="/#Hero" className="header__brand">
           <img className="header__brand-image" src={shouldBgChange && window.innerWidth > 1011 ? logoPalePrincipal : logoPaleNegativo} alt="logoPale" />
         </a>
         <BurgerMenu />

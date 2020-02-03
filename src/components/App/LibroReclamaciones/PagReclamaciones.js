@@ -5,12 +5,15 @@ import LibroReclamaciones from './FormReclamaciones/LibroReclamaciones';
 import {Footer} from '../Home/3-Footer/Footer';
 
 
-export default function PagLibroReclamaciones() {
+const PagLibroReclamaciones = () => {
     return(
+        // <h1>TEST</h1>
         <section>
-            <Header />
+            {/* <Header /> */}
             <LibroReclamaciones />
-            <Footer />
+            {/* <Footer /> */}
         </section>
     )
 }
+
+export default PagLibroReclamaciones;

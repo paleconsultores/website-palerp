@@ -1,24 +1,30 @@
 // Resources
 import React from 'react';
-import { BrowserRouter, Switch, Route} from 'react-router-dom';
+import { BrowserRouter, Route ,Switch} from "react-router-dom";
 
 // Dependencies
+import { Header } from './Home/1-Header/Header';
+import { Footer } from './Home/3-Footer/Footer';
 import { Home } from './Home';
 import PagLibroReclamaciones from './LibroReclamaciones/PagReclamaciones';
 
 function App() {
   return (
-    // <Home></Home>
-    <BrowserRouter>
-        <Switch>
-            <Route exact path="/">
-                <Home />
-            </Route>
-            <Route exact path="/libro-reclamaciones">
-                <PagLibroReclamaciones/>   
-            </Route>
-        </Switch>
-    </BrowserRouter>
+    <div>
+           <Header/>
+            <BrowserRouter>
+                <Switch>
+                    <Route exact path='/'>
+                        <Home />
+                    </Route>
+                    <Route path='/libro-reclamaciones'>
+                        <PagLibroReclamaciones/>
+                    </Route> 
+                </Switch>
+            </BrowserRouter>
+            <Footer/>
+    </div>
+
   );
 }
 

@@ -68,7 +68,7 @@ export default class LibroReclamaciones extends React.Component{
 
             var fechaActual=new Date();
             this.state.form.fecha=fechaActual;
-            console.log(this.state.form.fecha);
+            // console.log(this.state.form.fecha);
             const nombreCompleto=this.state.form.nombre+' '+this.state.form.primerApellido+' '+this.state.form.segundoApellido
             var tipoIncidencia='';
 
@@ -77,7 +77,7 @@ export default class LibroReclamaciones extends React.Component{
             }else{
                 tipoIncidencia='201';
             }   
-            console.log(tipoIncidencia);
+            // console.log(tipoIncidencia);
             const variables={
                 procedure:'USP_SOP_INCIDENCIAS_G',
                 parametros:[
@@ -106,8 +106,8 @@ export default class LibroReclamaciones extends React.Component{
                 ]
             }
             const reclamo= await api.libroReclamaciones.guardarReclamo(variables); 
-            console.log(reclamo);
-            console.log(reclamo.message);
+            // console.log(reclamo);
+            // console.log(reclamo.message);
             this.setState({
                 guardarReclamo:{resultado:[].concat(this.state.guardarReclamo,reclamo.resultado)}
             });
@@ -121,7 +121,7 @@ export default class LibroReclamaciones extends React.Component{
                 }
              
              const nroIncidencia=await api.libroReclamaciones.traerNroIncidencia(datosReclamo);
-             console.log(nroIncidencia);
+            //  console.log(nroIncidencia);
              this.setState({
                 Nro_Incidencia:{resultado:[].concat(this.state.Nro_Incidencia,nroIncidencia.resultado)}
              });
@@ -150,7 +150,7 @@ export default class LibroReclamaciones extends React.Component{
                     ruc_rus:this.state.form.ruc_rus
              }
             const crearPDF= await api.libroReclamaciones.creacionPDF(datosPDF);
-            console.log(crearPDF);
+            // console.log(crearPDF);
             this.setState({
                 crearPDF:{resultado:[].concat(this.state.crearPDF,crearPDF.resultado)}
             });
@@ -165,7 +165,7 @@ export default class LibroReclamaciones extends React.Component{
 
             }
             const email=await api.libroReclamaciones.enviarEmail(datosEmail);
-            console.log(email);
+            // console.log(email);
             this.setState({
                 email:{resultado:[].concat(this.state.email,email.resultado)}
             });

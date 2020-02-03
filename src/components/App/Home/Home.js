@@ -10,9 +10,9 @@ import './Home.css'
 export function Home() {
   return(
     <section className="Home">
-      <Header></Header>
+      {/* <Header></Header> */}
       <Body></Body>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </section>
   );
 }
