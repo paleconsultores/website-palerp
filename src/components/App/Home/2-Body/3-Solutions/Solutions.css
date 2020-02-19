@@ -18,6 +18,12 @@
   
 }
 
+.solutions_p{
+  color: #FF4544;
+}
+.solution_span{
+  color: #808495;
+}
 .solutionsSecond {
   background:#69B4CA;
   display: grid;

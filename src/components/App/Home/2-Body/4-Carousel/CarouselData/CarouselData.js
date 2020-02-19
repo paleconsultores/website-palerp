@@ -1,8 +1,17 @@
+import React from 'react';
 import img1 from '../images/img1-800.jpg'
 import img1_400 from '../images/img1-400.jpg'
 import img2 from '../images/factelectronica-800.jpg';
 import img2_400 from '../images/factelectronica-400.jpg';
-export const data = {
+import counterpart from 'counterpart';
+import Translate from 'react-translate-component';
+import en from './DataEn';
+import es from './DataEs';
+
+counterpart.registerTranslations('en', en);
+counterpart.registerTranslations('es', es);
+counterpart.setLocale('es');
+export  const data = {
     "properties":[
         // {
         //     "id":"imagen1",
@@ -18,12 +27,12 @@ export const data = {
             "picture":img2,
             "responsivepicture":img2_400, 
             "title":"iFacturación",
-            "text":"Sistema de facturación electrónica que te permite tener un mejor control de tu negocio, es la pieza clave en la modernización de la actividad empresarial.",
-            "d1":"Ahorra costo en almacenamiento.",
-            "d2":" Mejores control contable y logístico.",
-            "d3":"Fácil de usar.",
-            "d4":"Minimiza el riesgo de facturas erradas.",
-            "d5":"Ayuda a proteger el medio ambiente.",
+            "text":<Translate content="textCarousel" />,
+            "d1":<Translate content="d1" />,
+            "d2":<Translate content="d2" />,
+            "d3":<Translate content="d3" />,
+            "d4":<Translate content="d4" />,
+            "d5":<Translate content="d5" />,
             "link":"http://ifacturacion.pe/"
 
         },
