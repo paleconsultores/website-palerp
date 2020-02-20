@@ -5,16 +5,10 @@ import React, { useEffect } from "react";
 import './TypedText.css';
 
 import counterpart from 'counterpart';
-import Translate from 'react-translate-component';
-import en from './TextEn';
-import es from './TexEs';
-
-counterpart.registerTranslations('en', en);
-counterpart.registerTranslations('es', es);
-counterpart.setLocale('es');
 export default function TypedText() {
 
   let txt = 'Hola, Bienvenidos a Pale Consultores';
+
   let i = 0;
   let speed = 100;
   let isFinished = false;

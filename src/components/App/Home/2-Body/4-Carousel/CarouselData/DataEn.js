@@ -1,9 +1,9 @@
 export default {
-    textCarousel:'Electronic billing system that allows you to have better control of your business, is the key piece in the modernization of business activity.',
-    d1:'Save storage cost.',
-    d2:'Mejores control contable y logístico.',
-    d3:'Better accounting and logistics control.',
-    d4:'Minimizes the risk of wrong invoices.',
-    d5:'It helps to protect the environment.' 
+    textCarousel:'Electronic billing system that allows you to have better control of your business, this is the master piece in the modernization of the bussines activity.',
+    d1:'Make storage cost cheaper.',
+    d2:'Better contable and logistic control',
+    d3:'Easy to use.',
+    d4:'Makes the risk of wrong invoices lower.',
+    d5:'Helps to protecyt the enviroment' 
     
 }

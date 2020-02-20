@@ -14,6 +14,14 @@ import MessageSecond from './9-MessageSecond/MessageSecond';
 import ContactUs from "./ContactUs/ContactUs";
 import AboutUs from "./AboutUs/AboutUs";
 import CookieConsent, { Cookies } from "react-cookie-consent";
+// import counterpart from 'counterpart';
+// import Translate from 'react-translate-component';
+// import en from './CookiesEn';
+// import es from './CookiesEs';
+
+// counterpart.registerTranslations('en',en);
+// counterpart.registerTranslations('es',es);
+// counterpart.setLocale('es');
 
 // Styles
 import './Body.css';

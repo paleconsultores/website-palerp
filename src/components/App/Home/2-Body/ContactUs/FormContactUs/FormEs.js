@@ -1,12 +1,12 @@
 export default {
     FormContactItems1:{
-        formContent:'nombre'
+        formContent:'Ingrese nombre'
     },
     FormContactItems2:{
-        formContent:'email'
+        formContent:'Ingrese email'
     },
     FormContactItems3:{
-        formContent:'mensaje'
+        formContent:'Ingrese mensaje'
     },
     FormContactItems4:{
         formContent:'Enviar'

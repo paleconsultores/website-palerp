@@ -16,6 +16,7 @@ counterpart.setLocale('es');
 
 
 export default function ContactUs() {
+  // console.log(<Translate content="titleContaus" component="h1" className="title title--small title--gray"/>);
   return (
     <section id="ContactUs" className="contact-us">
       <div className="contact-us__content">

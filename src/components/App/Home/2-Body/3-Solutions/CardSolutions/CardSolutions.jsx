@@ -36,7 +36,8 @@ export default function CardSolutions(
        
 
        <div className="card-solutions__seccionInfo">
-             <p>{title} <span>{descripcion}</span> </p>
+             {/* <p>{title} <span>{descripcion}</span> </p> */}
+             <p>{title}<span>{descripcion}</span></p>
              
        </div>
 

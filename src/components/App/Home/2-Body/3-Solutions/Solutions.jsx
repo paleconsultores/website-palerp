@@ -27,8 +27,8 @@ export default function Solutions() {
     {
       type: 1,
       alt: <Translate content="items1.alt"/>,
-      title: <Translate content="items1.title" />,
-      descripcion:<Translate content="items1.descripcion" />,
+      title: <Translate content="items1.title" component="p"/>,
+      descripcion:<Translate content="items1.descripcion" component="span"/>,
       imageUrl: image2,
       responsiveimages : imgr3,
       text:<Translate content="items1.text" />
@@ -36,8 +36,8 @@ export default function Solutions() {
     {
       type: 1,
       alt: <Translate content="items2.alt" />,
-      title:  <Translate content="items2.title" />,
-      descripcion: <Translate content="items2.descripcion" />,
+      title:  <Translate content="items2.title" component="p"/>,
+      descripcion: <Translate content="items2.descripcion" component="span" />,
       imageUrl: image1,
       responsiveimages : imgr1,
       text: <Translate content="items2.text" />
@@ -45,8 +45,8 @@ export default function Solutions() {
     {
       type: 1,
       alt: <Translate content="items3.alt" />,
-      title: <Translate content="items3.title" />,
-      descripcion:<Translate content="items3.descripcion"/>,
+      title: <Translate content="items3.title" component="p"/>,
+      descripcion:<Translate content="items3.descripcion" component="span"/>,
       imageUrl: developing,
       responsiveimages : imgr2,
       text:<Translate content="items3.text"/>
