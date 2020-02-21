@@ -1,8 +1,8 @@
 // Dependencies
 import React from "react";
 import { Form } from "../../../../../sharedcomponents/Form";
-import  FormContactUs  from "./FormContactUs//FormContactUs";
-
+// import  FormContactUs  from "./FormContactUs/FormContactUs";
+import FormContact from "./FormContactUs/FormContac";
 // Resources
 import './ContactUs.css';
 import counterpart from 'counterpart';
@@ -25,7 +25,8 @@ export default function ContactUs() {
         {/* <p className="contact-us__paragraph">Esbribemos, estaremos atentos para responder lo antes posible.</p> */}
         <Translate content="comentario" component="p" className="contact-us__paragraph"/>
       </div>
-      <FormContactUs />
+      {/* <FormContactUs /> */}
+      <FormContact/>
     </section>
   )
 }
