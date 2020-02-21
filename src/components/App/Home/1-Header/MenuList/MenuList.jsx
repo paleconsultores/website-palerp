@@ -49,7 +49,7 @@ export  default class MenuList extends React.Component{
           <li><Translate content="items.i4" component="a" href="/#ContactUs"/></li>
           <li><Translate content="items.i5" component="a" href="http://paleacademia.hopto.org/" target="_blank" /></li>
           <li><Translate content="items.i6" component="a" href="https://www.ifacturacion.pe/libro-reclamaciones" target="_blank" /></li>
-          <li> <select value={this.state.lang} onChange={this.onLangChange}>
+          <li><select value={this.state.lang} onChange={this.onLangChange}>
              <option>es</option>
              <option>en</option>
            </select></li>

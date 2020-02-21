@@ -58,7 +58,22 @@
   font-size: 1.1rem;
 }
 
+.menu-list select{
+  font-family: 'Open Sans',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+ 
+}
+.header__menu .menu-list li select{
+  color: white;
+  background: #FF4544;
+  border: #FF4544;
+}
 
+.header__menu--positive .menu-list li select{
+    color: black;
+    background:transparent;
+}
 @media screen and (max-width: 1066px) {
   .menu-list {
     grid-template: 1fr / repeat(5, minmax( auto, 200px));
