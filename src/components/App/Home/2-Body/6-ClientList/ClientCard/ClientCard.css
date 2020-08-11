@@ -7,6 +7,6 @@
 /* img of Client card component */
 .ClientCard .image {
   /* filter: grayscale(100%); */
-  widows: 100%;
-  height:180px;
+  widows:100px;
+  height:auto;
 }

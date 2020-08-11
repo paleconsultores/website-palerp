@@ -3,13 +3,14 @@
   position: fixed;
   z-index: 3;
   width: 100%;
-  background: transparent;
+  background: #FF4544;
   top: 0;
   transition: .5s ease-in-out;
 }
 
 .header--positive {
   background: white;
+  box-shadow: 9px 9px 9px 0 rgba(47, 44, 44, 0.2);
 }
 
 /* navbar element */

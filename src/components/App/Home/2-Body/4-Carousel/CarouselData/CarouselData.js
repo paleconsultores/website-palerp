@@ -1,33 +1,55 @@
+import React from 'react';
 import img1 from '../images/img1-800.jpg'
 import img1_400 from '../images/img1-400.jpg'
 import img2 from '../images/factelectronica-800.jpg';
 import img2_400 from '../images/factelectronica-400.jpg';
-export const data = {
+import counterpart from 'counterpart';
+import Translate from 'react-translate-component';
+import en from './DataEn';
+import es from './DataEs';
+
+counterpart.registerTranslations('en', en);
+counterpart.registerTranslations('es', es);
+counterpart.setLocale('es');
+export  const data = {
     "properties":[
-        {
-            "id":"imagen1",
-            "index":0,
-            "picture":img1,
-             "responsivepicture":img1_400, 
-            "title":"Misión",
-            "text":"PALE CONSULTORES tiene como misión proveer software, hardware y soporte a las compañías de medianas y grandes empresas radicadas en Perú, romper todas las barreras tecnológicas, transformando las tecnologías de información en herramientas amigables para los usuarios.La elaboración de software nativo con calidad, para poder brindarles a nuestros clientes una herramienta de apoyo administrativo.Nosotros estamos en una búsqueda continua de la mejor solución para las necesidades de nuestros clientes en términos de seguridad y estabilidad."
-        },
-        {
-            "id":"imagen2",
-            "index":1,
-            "picture":img1,
-            "responsivepicture":img1_400, 
-            "title":"Visión",
-            "text":"Crear software local con calidad y estandares internacionales, para competir con los softwares locales e internacionales.Ser el mejor en las áreas de servicio y asesoría de tecnologías de computacionales vanguardia.Facilitarles a nuestros clientes tecnologías eficientes.Crear rentabilidad económica para los accionistas y sus empleados.Implementar tecnologías de información que fueron desarrollados en base requerimientos de estos tiempos modernos, además utilizamos técnicas y estándares internacionales."
- 
-        },
+        // {
+        //     "id":"imagen1",
+        //     "index":0,
+        //     "picture":img1,
+        //      "responsivepicture":img1_400, 
+        //     "title":"Misión",
+        //     "text":"PALE CONSULTORES tiene como misión proveer software, hardware y soporte a las compañías de medianas y grandes empresas radicadas en Perú, romper todas las barreras tecnológicas, transformando las tecnologías de información en herramientas amigables para los usuarios.La elaboración de software nativo con calidad, para poder brindarles a nuestros clientes una herramienta de apoyo administrativo.Nosotros estamos en una búsqueda continua de la mejor solución para las necesidades de nuestros clientes en términos de seguridad y estabilidad."
+        // },
         {
             "id":"imagen3",
-            "index":2,
+            "index":0,
             "picture":img2,
             "responsivepicture":img2_400, 
-            "title":"Facturación Electrónica",
-            "text":"Es nuestra solución de facturación electrónica que emite y recibe comprobantes de pago de forma fácil, rápida y segura."
-        }
+            "title":"iFacturación",
+            "text":<Translate content="textCarousel" />,
+            "d1":<Translate content="d1" />,
+            "d2":<Translate content="d2" />,
+            "d3":<Translate content="d3" />,
+            "d4":<Translate content="d4" />,
+            "d5":<Translate content="d5" />,
+            "link":"http://ifacturacion.pe/"
+
+        },
+        // {
+        //     "id":"imagen2",
+        //     "index":1,
+        //     "picture":img1,
+        //     "responsivepicture":img1_400, 
+        //     "title":"Hola",
+        //     "text":"Sistema de facturación electrónica que te permite tener un mejor control de tu negocio, es una pieza clave en la modernización de la actividad empresarial.",
+        //     "d1":"Ahorra costo en almacenamiento.",
+        //     "d2":" Mejores control contable y logístico.",
+        //     "d3":"Fácil de usar.",
+        //     "d4":"Minimiza el riesgo de facturas erradas.",
+        //     "d5":"Ayuda a proteger el medio ambiente.",
+        //     "link":"http://ifacturacion.pe/"
+ 
+        // }
     ]
 }

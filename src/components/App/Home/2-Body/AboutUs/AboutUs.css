@@ -1,0 +1,45 @@
+/* About us block */
+.about-us{
+  box-sizing: border-box;
+  padding-top: 5.5rem;
+  height: 100vh;
+  display: grid;
+  grid-template: auto 4fr 3fr  / minmax(100px, 1200px);
+  justify-content: center;
+}
+
+/* header element */
+.about-us__header {
+  /*width: 90%;*/
+  /*justify-self: center;*/
+}
+
+/* time line block */
+.timeline {
+  width: 90%;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+
+/* image element */
+.timeline__image {
+}
+
+/* events block */
+.events {
+  width: 70%;
+  justify-self: center;
+  display: grid;
+  grid-template: 1fr / repeat(4, 1fr);
+  grid-gap: 2rem;
+}
+
+@media screen and (max-width: 1066px){
+  .about-us {
+    display: none;
+  }
+
+
+}
+

@@ -1,0 +1,117 @@
+.FormReclamaciones{
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+.Form_encabezado{
+    background:	#E6E6E6;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+.Form_colum{
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: space-between;
+}
+.Form_colum select{
+  border-radius:8px 8px 8px 8px;
+  font-size: 13px;
+  line-height: 18px;
+  border-radius: 5px !important;
+  border: 1px solid #0082ca8a; 
+  box-shadow: none; 
+  outline: none; 
+  padding: 16px 30px 15px; 
+  transition: all 0.3s ease; 
+  box-sizing: border-box !important;
+  display: block;
+  height: 49px;
+  margin:15px;
+}
+.Form_filas{
+    display: flex;
+    flex-direction: row wrap;
+    /* justify-content: flex-start; */
+}
+.Form_filas input[type="radio" i]{
+    background-color: initial;
+    cursor: default;
+    -webkit-appearance: radio;
+    box-sizing: border-box;
+    padding: initial;
+    border: initial;
+    height: 20px;
+    margin: 10px;
+}
+
+.FormReclamaciones p{
+    color: #4B75B8;
+    font-weight: bold;
+    font-size: 18px;
+}
+.FormReclamaciones label{
+    font-weight: bold;
+    font-size: 14px;
+    margin: 20px;
+ 
+}
+.FormReclamaciones input{
+    border-radius:8px 8px 8px 8px;
+    font-size: 13px;
+    line-height: 18px;
+    background:#CFE6EC;
+    border-radius: 5px !important;
+    border: 1px solid #0082ca8a; 
+    box-shadow: none; 
+    outline: none; 
+    padding: 16px 30px 15px; 
+    transition: all 0.3s ease; 
+    box-sizing: border-box !important;
+    width: 80%;
+    display: block;
+    height: 40px;
+    margin:15px;
+}
+
+.FormReclamaciones textarea{
+    border-radius:8px 8px 8px 8px;
+    font-size: 13px;
+    line-height: 18px;
+    background:#CFE6EC;
+    border-radius: 5px !important;
+    border: 1px solid #0082ca8a; 
+    box-shadow: none; 
+    outline: none; 
+    padding: 16px 30px 15px; 
+    transition: all 0.3s ease; 
+    box-sizing: border-box !important;
+    width: 80%;
+    display: block;
+    height: 60px;
+    margin:15px;
+}
+.FormReclamaciones button{
+    background: #0082CA;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px;
+    margin:10px;
+}
+
+
+

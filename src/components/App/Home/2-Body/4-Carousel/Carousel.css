@@ -1,5 +1,11 @@
+/* Carousel section */
+.carousel {
+    padding-top: 5.5rem;
+    
+}
+
 /*Carousel-Slider component*/
-.carousel-section{
+.carousel__slider{
     display: grid;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -12,6 +18,8 @@
     overflow: hidden;
     position: relative;
     height: 38em;
+    /* height: 2px; */
+    
 }
 /*carousel-slider wrapped per image*/
 .carousel-slider-wrapper{
@@ -19,3 +27,18 @@
     position: absolute;
     transition: transform 2000ms cubic-bezier(0.77, 0, 0.175, 1);
 }
+
+@media screen and (max-width:1024px){
+    .carousel__slider{
+        height:780px;
+        grid-template: 1fr / minmax(100px, 1000px);
+    }
+
+    .carousel-slider{
+        box-sizing: border-box;
+        overflow: hidden;
+        position: relative;
+        height: auto;
+    }
+}
+

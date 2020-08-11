@@ -1,0 +1,16 @@
+.contact-us {
+  padding-top: 5.5rem;
+  display: grid;
+  grid-template: 1fr / minmax(100px, 1200px);
+  justify-content: center;
+}
+
+.contact-us__content {
+  justify-self: center;
+  width: 90%;
+}
+
+.contact-us__paragraph {
+  display: flex;
+  justify-content: center;
+}

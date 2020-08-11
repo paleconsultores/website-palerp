@@ -3,15 +3,13 @@
   width: 100%;
   display: grid;
   grid-template: 1fr / 1fr 1fr;
-  min-width: 1200px; 
   border: 1px solid black;
   text-align:  center;
   background: #FFFFFF;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.60);
   border-radius: 8px 8px 8px 8px;
-  align-content: center;
-  align-items: center;
   margin-top: 20px;
+ 
 }
 /*image of Carousel Card Component*/
 .carousel-card__image{
@@ -26,61 +24,109 @@
 .carousel-card__text{
   background: #FF4544;
   height: 20em;
-  align-items: center;
   margin-top: 1px;
-  font-size: 1.6em;
+  font-weight: bold;
   color: white;
+  font-size: 1.25rem;
+  font-family:  'Open Sans',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  padding: 1.5em 3rem;
+
 }
-@media screen and (max-width: 1200px){
+.carousel-card__text-tittle{
+  font-size:  2rem;
+  text-align: center;
+}
+.carousel-card__text-text{
+  text-align: initial;
+}
+
+.carousel-card__text-text-a {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+
+
+@media screen and (max-width: 360px){
   .carousel-card{
-    min-width: 94.5vw;
-    height: 36em;
+ 
+    /* height: 36em; */
+    grid-template: repeat(1, minmax(auto, auto)) / 1fr;
   }
-  .carousel-card__image{
-    height: 35vh;
-  }
+  /* .carousel-card__image{
+    /* height: 35vh; */
+    /* height: 100px;
+  } */
   .carousel-card__text{
-    height: 55vh;
+    /* height: 55vh; */
     font-size: 1.8em;
+    height: auto;
   }
 }  
 /*Media Query for a medium deskptop screen*/
-@media screen and (max-width: 1052px){
-  .carousel-card__image{
-    height: 60%;
-  }
-  .carousel-card__text{
-    height: 99.5%;
-    font-size: 1.3em;
-  }
-}  
-@media screen and (max-width: 768px){
-  .carousel-card{
-    min-width: 94.8vw;
-    height: 32em;
-  }
-  .carousel-card__image{
-    height: 70%;
-  
-  }
-  .carousel-card__text{
-    font-size: 1.6vw;
-  }
-} 
-/*Media Query for a small device*/
-@media screen and (max-width: 480px){
+@media screen and (max-width: 375px){
   .carousel-card{
     min-width: 98.9vw;
-    height: 30em;
+    height: 100%;
+    /* height: 30em; */
+    grid-template: repeat(1, minmax(auto, auto)) / 1fr;
   }
   .carousel-card__image{
     margin-left: 8px;
     height: 18vh;
   }
   .carousel-card__text{
-    height: 23vh;
-    font-size: 2vw;
+    height: auto;
+    font-size: 1.8em;
+    margin-bottom: 3px;
+  }
+}
+@media screen and (max-width: 768px){
+  .carousel-card{
+    min-width: 94.8vw;
+    height:auto;
+    grid-template: repeat(1, 300px 2fr) /1fr;
+  }
+  .carousel-card__image{
+    height: 70%;
+  
+  }
+  .carousel-card__text{
+    height: auto;
+  }
+} 
+/*Media Query for a small device*/
+
+@media screen and (max-width: 480px){
+  .carousel-card{
+    min-width: 98.9vw;
+    height: 100%;
+    grid-template: repeat(1, minmax(auto, auto)) / 1fr;
+  }
+  .carousel-card__image{
+    margin-left: 8px;
+    height: 18vh;
+  }
+  .carousel-card__text{
+    height: auto;
     margin-bottom: 3px;
   }
 }
 
+@media screen and (max-width: 1024px){
+  .carousel-card{
+  
+    grid-template: repeat(1, minmax(auto, auto)) / 1fr;
+  }
+  .carousel-card__image{
+    margin-left: 8px;
+    height: 250px;
+    
+  }
+  .carousel-card__text{
+    height: auto;
+   
+    margin-bottom: 3px;
+  }
+
+}

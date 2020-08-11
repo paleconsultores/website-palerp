@@ -25,6 +25,7 @@
   /*justify-self: center;*/
   color: white;
   font-size: 2.7rem;
+  margin: 30px;
 }
 
 /* hero background element */
@@ -45,7 +46,6 @@
 
 /* hexagon animation element */
 .hero__hex-animation {
-  overflow: hidden;
   transform: translate(-50%, -50%);
   transform-origin: 50% 50%;
   position: absolute;
